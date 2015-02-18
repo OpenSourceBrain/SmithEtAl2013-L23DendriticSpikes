@@ -1,0 +1,295 @@
+# ----------------------------------------------------------
+# Main simulation control
+#
+# Tiago Branco, MRC Laboratory of Molecular Biology, 2013
+# email: tbranco@mrc-lmb.cam.ac.uk
+# ----------------------------------------------------------
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pickle
+import time
+
+import brian as br
+
+import libcell as lb
+import saveClass as sc
+
+#----------------------------------------------------------------------------
+# Functions and Classes
+def initOnsetSpikes():
+    model.ncAMPAlist[0].event(data.st_onset)
+
+def initSpikes():
+    for s in data.etimes:
+        model.ncAMPAlist[int(s[0])].event(float(s[1]))
+        if data.NMDA: model.ncNMDAlist[int(s[0])].event(float(s[1]))
+    if data.GABA == True:
+        for s in data.itimes:
+            model.ncGABAlist[int(s[0])].event(float(s[1]))
+
+def storeSimOutput(v,vD,i,g,r,ca, vSec):
+        data.vdata.append(v)
+        data.vDdata.append(vD)
+        data.idata.append(i)
+        data.gdata.append(g)
+        data.rates.append(r)
+        data.caDdata.append(ca)
+        data.vsec.append(vSec)
+
+# Synapse location functions
+def genRandomLocs(nsyn):
+    locs = []
+    for s in np.arange(0,nsyn):
+        dend = np.random.randint(low=0, high=len(model.dends))
+        pos = np.random.uniform()
+        locs.append([dend, pos])
+    return locs
+
+# Input generation functions
+def genPoissonInput(nsyn, rate, duration, onset):
+    times = np.array([])
+    while times.shape[0]<2:
+        P =  br.OfflinePoissonGroup(nsyn, rate, duration * br.ms)
+        times = np.array(P.spiketimes)    
+    times[:,1] = times[:,1] * 1000 + onset
+    rates = 1./np.diff(np.array(P.spiketimes)[:,1]).mean()
+    return times, rates
+
+def genRandomFixedInput(nsyn, tInterval, onset):
+    times = np.zeros([nsyn, 2])
+    times[:,0] = np.arange(0, nsyn)
+    np.random.shuffle(times[:,0])
+    times[:,1] = np.arange(0, nsyn*tInterval, tInterval) + onset
+    return times
+
+def addBground(nsyn, Snsyn, rate, sTimes):
+    P =  br.OfflinePoissonGroup(nsyn, rate, data.TSTOP * br.ms)
+    bTimes = np.array(P.spiketimes)
+    bTimes[:,0] = bTimes[:,0] + Snsyn
+    bTimes[:,1] = bTimes[:,1] * 1000
+    times = np.vstack((bTimes, sTimes))
+    return times
+
+# Simulation functions
+def sim_oneRandomInput(Ensyn, Insyn, Erate, Irate, bGround=False):
+    soma_v, gdata, idata, Erates, Irates, dend_v, dend_ca, vSec = [], [], [], [], [], [], [], []
+    data.all_Etimes, data.all_Itimes = [], []
+    ETIMES = np.load('./etimes.npy')
+    ITIMES = np.load('./itimes.npy')
+
+    for trial in np.arange(0, data.TRIALS):
+        # Generate input
+        data.etimes, erates = genPoissonInput(Ensyn, Erate, data.st_duration, 
+                                              data.st_onset)
+        data.itimes, irates = genPoissonInput(Insyn, Irate, data.st_duration,
+                                              data.st_onset)
+        Erates.append(erates)
+        Irates.append(irates)
+        if bGround:
+            data.etimes = addBground(data.bEnsyn, Ensyn, data.EbGroundRate,
+                                     data.etimes)
+            data.itimes = addBground(data.bInsyn, Insyn, data.IbGroundRate,
+                                     data.itimes)
+
+        # Hack for freezing the input
+        # Comment out to get random times
+        data.etimes = ETIMES[trial]
+        data.itimes = ITIMES[trial]
+
+        # Run
+        fih = lb.h.FInitializeHandler(1, initSpikes)
+        taxis, v, vD, g, i, ca , vsec = lb.simulate(model, t_stop=data.TSTOP,
+                                      NMDA=data.NMDA, recDend=data.recordDend, recSec=data.recordSec)
+
+        # Store data
+        soma_v.append(v)
+        dend_v.append(vD)
+        dend_ca.append(ca)
+        vSec.append(vsec)
+        data.all_Etimes.append(data.etimes)
+        data.all_Itimes.append(data.itimes)
+        if data.NMDA == True:
+            #idata.append(np.sum(np.array(i).min(1)))
+            idata.append(np.array(i))
+            gdata.append(np.sum(np.array(g).max(1)))
+    return taxis, soma_v, dend_v, Erates, gdata, idata, dend_ca, vSec
+
+
+def SIM_rateIteration(rRange, bGround):
+    for rate in rRange:
+        print 'Running E rate', rate
+        data.taxis, v, vD, r, g, i, ca, vsec = sim_oneRandomInput(data.Ensyn, data.Insyn, Erate=rate, Irate=rate, bGround=bGround)
+        storeSimOutput(v,vD,i,g,r,ca,vsec)        
+   
+
+def SIM_currentSteps(iRange, bGround=False):
+    soma_v, r, idata, gdata = [], [], [], []
+    if bGround:
+        data.etimes = addBground(data.bEnsyn, data.Ensyn, data.EbGroundRate,
+                                 [0,0])
+        data.itimes = addBground(data.bInsyn, data.Insyn, data.IbGroundRate,
+                                 [0,0])
+        fih = lb.h.FInitializeHandler(1, initSpikes)
+    for step in iRange:
+        model.stim.amp = step
+        taxis, v, vD, g, i = lb.simulate(model, t_stop=data.TSTOP,
+                                         NMDA=data.NMDA, recDend=data.recordDend)
+        if data.NMDA == True:
+            idata.append(np.sum(np.array(i).min(1)))
+            gdata.append(np.sum(np.array(g).max(1)))
+        storeSimOutput(v,vD,idata,gdata,r=0)
+    data.taxis = taxis
+
+#----------------------------------------------------------------------------
+# Data saving object
+data = sc.emptyObject()
+
+# Simulation general parameters
+data.dt = 0.1
+lb.h.dt = data.dt
+lb.h.steps_per_ms = 1.0/lb.h.dt
+data.st_onset = 200.0
+data.st_duration = 200.
+data.TSTOP = 600
+data.TRIALS = 5
+data.Egmax = 1
+data.Igmax = 1
+data.Irev = -80
+data.Ensyn = 100
+data.Insyn = int(data.Ensyn*0.2)
+data.bEnsyn = 200
+data.bInsyn = int(data.bEnsyn*0.2)
+
+# Simulation CONTROL
+data.model = 'L23'
+data.locType = 'fixed'
+data.simType = 'rateIteration'
+data.fixedINPUT = False
+
+data.ACTIVE = True
+data.ACTIVEdend = True
+data.ACTIVEdendNa = True
+data.ACTIVEdendCa = True
+data.ACTIVEaxonSoma = True
+data.ACTIVEhotSpot = True
+data.SYN = True
+data.SPINES = False
+data.ICLAMP = False
+data.NMDA = True
+data.GABA = True
+data.BGROUND = True
+
+# Create neuron and add mechanisms
+if data.model == 'BS': model = lb.BS()
+if data.model == 'L23': model = lb.L23()
+if data.model == 'CELL': model = lb.CELL()
+if data.SPINES: lb.addSpines(model)
+if data.ACTIVE: lb.init_active(model, axon=data.ACTIVEaxonSoma,
+                             soma=data.ACTIVEaxonSoma, dend=data.ACTIVEdend,
+                             dendNa=data.ACTIVEdendNa, dendCa=data.ACTIVEdendCa) 
+if data.ACTIVEhotSpot: lb.hotSpot(model)
+
+# Generate synapse locations
+if data.locType=='random':
+    data.Elocs = genRandomLocs(data.Ensyn)
+    data.Ilocs = genRandomLocs(data.Insyn)
+
+if data.locType=='fixed':
+    loadElocs = np.load('./Elocs.npy')
+    data.Elocs = loadElocs[0:data.Ensyn]
+    loadIlocs = np.load('./Ilocs.npy')
+    data.Ilocs = loadIlocs[0:data.Insyn]
+
+if data.BGROUND:
+    data.bElocs = genRandomLocs(data.bEnsyn)
+    data.bIlocs = genRandomLocs(data.bInsyn)
+    data.Elocs = np.vstack((data.Elocs, data.bElocs))
+    data.Ilocs = np.vstack((data.Ilocs, data.bIlocs))
+
+    # Hack for freezing the background 
+    # Uncomment first 2 lines and comment out last 2 for
+    # random background    
+
+    #data.bElocs = loadElocs[data.Ensyn+1:]
+    #data.bIlocs = loadIlocs[data.Insyn+1:]
+    data.Elocs = loadElocs
+    data.Ilocs = loadIlocs
+
+# Insert synapses
+if data.SYN:
+    lb.add_AMPAsyns(model, locs=data.Elocs, gmax=data.Egmax)
+    if data.NMDA: lb.add_NMDAsyns(model, locs=data.Elocs, gmax=data.Egmax)  
+    if data.GABA: lb.add_GABAsyns(model, locs=data.Ilocs, gmax=data.Igmax,
+                              rev=data.Irev) 
+
+# Insert IClamp
+data.iclampLoc = ['dend', 0.5, 28]
+data.iclampOnset = 50
+data.iclampDur = 250
+data.iclampAmp = 0
+
+if data.ICLAMP:
+    if data.iclampLoc[0]=='soma':
+        lb.add_somaStim(model, data.iclampLoc[1], onset=data.iclampOnset,
+                        dur=data.iclampDur, amp=data.iclampAmp)
+    if data.iclampLoc[0]=='dend':
+        lb.add_dendStim(model, data.iclampLoc[1], data.iclampLoc[2],
+                 onset=data.iclampOnset, dur=data.iclampDur, amp=data.iclampAmp)
+
+#----------------------------------------------------------------------------
+# Data storage lists
+data.vdata, data.vDdata, data.gdata, data.idata, data.caDdata, data.vsec = [], [], [], [], [], []
+data.rates = []
+
+#----------------------------------------------------------------------------
+# Run simulation
+
+# Specific parameters
+data.rateRange = np.arange(8,9,10)
+data.lagRange = np.arange(-100,110,10)
+data.iRange = np.arange(-0.1,0.2,0.1)
+data.singleRate = 51
+data.tInterval = 1
+data.EbGroundRate = 2
+data.IbGroundRate = 2
+data.recordDend = True
+data.recordSec = False
+
+if data.simType=='rateIteration':SIM_rateIteration(data.rateRange, data.BGROUND)
+if data.simType=='iSteps':SIM_currentSteps(data.iRange, data.BGROUND)
+
+
+#----------------------------------------------------------------------------
+# Save data
+modelData = sc.emptyObject()
+lb.props(modelData)
+
+tstamp = time.strftime("sim%Y%b%d_%H%M%S")
+tstamp = 'temp'
+
+dataList = [data, modelData]
+fname = './'+tstamp+'.pkl'
+f = open(fname, 'wb')
+pickle.dump(dataList, f)
+f.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
