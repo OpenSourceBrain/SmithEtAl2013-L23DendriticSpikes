@@ -1,6 +1,7 @@
 /NEURON/temp.pkl
 /NEURON/saveClass.pyc
 /NEURON/libcell.pyc
+/NEURON/test/*.dat
 *.bak
 *~
 generatedNeuroML
@@ -19,6 +20,7 @@ NeuroML2/*.log
 NeuroML2/*.hoc
 NeuroML2/*.props
 NeuroML2/*nrn.py
+NeuroML2/LEMS_Test*
 
 x86_64
 umac

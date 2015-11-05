@@ -4,13 +4,13 @@
     xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd"
     id = "NeuroML2_file_exported_from_NEURON">
 
-  <notes> NeuroML 2 file generated from ModelView by: NEURON -- Release 7.2 (551:9d708f513f8c) 2011-11-22
+  <notes> NeuroML 2 file generated from ModelView by: NEURON -- Release 7.4 (1351:8f462ea7e030) 2015-07-21
           Authors: Michael Hines, Sushil Kambampati and Padraig Gleeson,
           Yale University and UCL 
   </notes>
 
-  <cell id="soma">
-    <notes>Cell: soma exported from NEURON ModelView</notes>
+  <cell id="Cell0">
+    <notes>Cell: Cell0 exported from NEURON ModelView</notes>
     <morphology id="morphology">
 <!-- Section: soma (segmentGroup: soma) which has 2 3D points, so 1 segment(s)-->
       <segment id="0" name = "Seg0_soma">
@@ -12004,20 +12004,20 @@
 
 <!-- Section: soma (segmentGroup: soma) which has 2 3D points, so 1 segment(s)-->
 
-      <segmentGroup id = "soma"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "soma"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "0"/>
       </segmentGroup>
 
 
 <!-- Section: dend4_1 (segmentGroup: dend4_1) which has 8 3D points, so 7 segment(s)-->
 
-      <segmentGroup id = "dend4_1"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2452"/>
         <member segment = "2453"/>
         <member segment = "2454"/>
@@ -12030,10 +12030,10 @@
 
 <!-- Section: dend3_1 (segmentGroup: dend3_1) which has 7 3D points, so 6 segment(s)-->
 
-      <segmentGroup id = "dend3_1"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1417"/>
         <member segment = "1418"/>
         <member segment = "1419"/>
@@ -12045,10 +12045,10 @@
 
 <!-- Section: dend2_1 (segmentGroup: dend2_1) which has 8 3D points, so 7 segment(s)-->
 
-      <segmentGroup id = "dend2_1"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "518"/>
         <member segment = "519"/>
         <member segment = "520"/>
@@ -12061,10 +12061,10 @@
 
 <!-- Section: dend1_1 (segmentGroup: dend1_1) which has 3 3D points, so 2 segment(s)-->
 
-      <segmentGroup id = "dend1_1"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1"/>
         <member segment = "2"/>
       </segmentGroup>
@@ -12072,10 +12072,10 @@
 
 <!-- Section: dend4_12 (segmentGroup: dend4_12) which has 12 3D points, so 11 segment(s)-->
 
-      <segmentGroup id = "dend4_12"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_12"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2761"/>
         <member segment = "2762"/>
         <member segment = "2763"/>
@@ -12092,10 +12092,10 @@
 
 <!-- Section: dend4_11 (segmentGroup: dend4_11) which has 3 3D points, so 2 segment(s)-->
 
-      <segmentGroup id = "dend4_11"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_11"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2459"/>
         <member segment = "2460"/>
       </segmentGroup>
@@ -12103,10 +12103,10 @@
 
 <!-- Section: dend3_12 (segmentGroup: dend3_12) which has 6 3D points, so 5 segment(s)-->
 
-      <segmentGroup id = "dend3_12"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1734"/>
         <member segment = "1735"/>
         <member segment = "1736"/>
@@ -12117,10 +12117,10 @@
 
 <!-- Section: dend3_11 (segmentGroup: dend3_11) which has 15 3D points, so 14 segment(s)-->
 
-      <segmentGroup id = "dend3_11"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_11"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1423"/>
         <member segment = "1424"/>
         <member segment = "1425"/>
@@ -12140,10 +12140,10 @@
 
 <!-- Section: dend2_12 (segmentGroup: dend2_12) which has 14 3D points, so 13 segment(s)-->
 
-      <segmentGroup id = "dend2_12"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "780"/>
         <member segment = "781"/>
         <member segment = "782"/>
@@ -12162,10 +12162,10 @@
 
 <!-- Section: dend2_11 (segmentGroup: dend2_11) which has 9 3D points, so 8 segment(s)-->
 
-      <segmentGroup id = "dend2_11"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_11"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "525"/>
         <member segment = "526"/>
         <member segment = "527"/>
@@ -12179,10 +12179,10 @@
 
 <!-- Section: dend1_12 (segmentGroup: dend1_12) which has 6 3D points, so 5 segment(s)-->
 
-      <segmentGroup id = "dend1_12"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_12"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "232"/>
         <member segment = "233"/>
         <member segment = "234"/>
@@ -12193,10 +12193,10 @@
 
 <!-- Section: dend1_11 (segmentGroup: dend1_11) which has 5 3D points, so 4 segment(s)-->
 
-      <segmentGroup id = "dend1_11"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_11"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "3"/>
         <member segment = "4"/>
         <member segment = "5"/>
@@ -12206,10 +12206,10 @@
 
 <!-- Section: dend4_122 (segmentGroup: dend4_122) which has 6 3D points, so 5 segment(s)-->
 
-      <segmentGroup id = "dend4_122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2835"/>
         <member segment = "2836"/>
         <member segment = "2837"/>
@@ -12220,10 +12220,10 @@
 
 <!-- Section: dend4_121 (segmentGroup: dend4_121) which has 64 3D points, so 63 segment(s)-->
 
-      <segmentGroup id = "dend4_121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2772"/>
         <member segment = "2773"/>
         <member segment = "2774"/>
@@ -12292,10 +12292,10 @@
 
 <!-- Section: dend4_112 (segmentGroup: dend4_112) which has 17 3D points, so 16 segment(s)-->
 
-      <segmentGroup id = "dend4_112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2625"/>
         <member segment = "2626"/>
         <member segment = "2627"/>
@@ -12317,10 +12317,10 @@
 
 <!-- Section: dend4_111 (segmentGroup: dend4_111) which has 10 3D points, so 9 segment(s)-->
 
-      <segmentGroup id = "dend4_111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2461"/>
         <member segment = "2462"/>
         <member segment = "2463"/>
@@ -12335,10 +12335,10 @@
 
 <!-- Section: dend3_122 (segmentGroup: dend3_122) which has 7 3D points, so 6 segment(s)-->
 
-      <segmentGroup id = "dend3_122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2288"/>
         <member segment = "2289"/>
         <member segment = "2290"/>
@@ -12350,10 +12350,10 @@
 
 <!-- Section: dend3_121 (segmentGroup: dend3_121) which has 7 3D points, so 6 segment(s)-->
 
-      <segmentGroup id = "dend3_121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1739"/>
         <member segment = "1740"/>
         <member segment = "1741"/>
@@ -12365,10 +12365,10 @@
 
 <!-- Section: dend3_112 (segmentGroup: dend3_112) which has 6 3D points, so 5 segment(s)-->
 
-      <segmentGroup id = "dend3_112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1628"/>
         <member segment = "1629"/>
         <member segment = "1630"/>
@@ -12379,10 +12379,10 @@
 
 <!-- Section: dend3_111 (segmentGroup: dend3_111) which has 16 3D points, so 15 segment(s)-->
 
-      <segmentGroup id = "dend3_111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1437"/>
         <member segment = "1438"/>
         <member segment = "1439"/>
@@ -12403,10 +12403,10 @@
 
 <!-- Section: dend2_122 (segmentGroup: dend2_122) which has 10 3D points, so 9 segment(s)-->
 
-      <segmentGroup id = "dend2_122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1267"/>
         <member segment = "1268"/>
         <member segment = "1269"/>
@@ -12421,10 +12421,10 @@
 
 <!-- Section: dend2_121 (segmentGroup: dend2_121) which has 8 3D points, so 7 segment(s)-->
 
-      <segmentGroup id = "dend2_121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "793"/>
         <member segment = "794"/>
         <member segment = "795"/>
@@ -12437,10 +12437,10 @@
 
 <!-- Section: dend2_112 (segmentGroup: dend2_112) which has 17 3D points, so 16 segment(s)-->
 
-      <segmentGroup id = "dend2_112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "669"/>
         <member segment = "670"/>
         <member segment = "671"/>
@@ -12462,10 +12462,10 @@
 
 <!-- Section: dend2_111 (segmentGroup: dend2_111) which has 11 3D points, so 10 segment(s)-->
 
-      <segmentGroup id = "dend2_111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "533"/>
         <member segment = "534"/>
         <member segment = "535"/>
@@ -12481,10 +12481,10 @@
 
 <!-- Section: dend1_122 (segmentGroup: dend1_122) which has 6 3D points, so 5 segment(s)-->
 
-      <segmentGroup id = "dend1_122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "351"/>
         <member segment = "352"/>
         <member segment = "353"/>
@@ -12495,10 +12495,10 @@
 
 <!-- Section: dend1_121 (segmentGroup: dend1_121) which has 14 3D points, so 13 segment(s)-->
 
-      <segmentGroup id = "dend1_121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "237"/>
         <member segment = "238"/>
         <member segment = "239"/>
@@ -12517,10 +12517,10 @@
 
 <!-- Section: dend1_112 (segmentGroup: dend1_112) which has 7 3D points, so 6 segment(s)-->
 
-      <segmentGroup id = "dend1_112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "126"/>
         <member segment = "127"/>
         <member segment = "128"/>
@@ -12532,10 +12532,10 @@
 
 <!-- Section: dend1_111 (segmentGroup: dend1_111) which has 8 3D points, so 7 segment(s)-->
 
-      <segmentGroup id = "dend1_111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "7"/>
         <member segment = "8"/>
         <member segment = "9"/>
@@ -12548,10 +12548,10 @@
 
 <!-- Section: dend4_1222 (segmentGroup: dend4_1222) which has 6 3D points, so 5 segment(s)-->
 
-      <segmentGroup id = "dend4_1222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_1222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2855"/>
         <member segment = "2856"/>
         <member segment = "2857"/>
@@ -12562,10 +12562,10 @@
 
 <!-- Section: dend4_1221 (segmentGroup: dend4_1221) which has 16 3D points, so 15 segment(s)-->
 
-      <segmentGroup id = "dend4_1221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_1221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2840"/>
         <member segment = "2841"/>
         <member segment = "2842"/>
@@ -12586,10 +12586,10 @@
 
 <!-- Section: dend4_1122 (segmentGroup: dend4_1122) which has 64 3D points, so 63 segment(s)-->
 
-      <segmentGroup id = "dend4_1122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_1122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2698"/>
         <member segment = "2699"/>
         <member segment = "2700"/>
@@ -12658,10 +12658,10 @@
 
 <!-- Section: dend4_1121 (segmentGroup: dend4_1121) which has 58 3D points, so 57 segment(s)-->
 
-      <segmentGroup id = "dend4_1121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_1121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2641"/>
         <member segment = "2642"/>
         <member segment = "2643"/>
@@ -12724,10 +12724,10 @@
 
 <!-- Section: dend4_1112 (segmentGroup: dend4_1112) which has 6 3D points, so 5 segment(s)-->
 
-      <segmentGroup id = "dend4_1112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_1112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2527"/>
         <member segment = "2528"/>
         <member segment = "2529"/>
@@ -12738,10 +12738,10 @@
 
 <!-- Section: dend4_1111 (segmentGroup: dend4_1111) which has 58 3D points, so 57 segment(s)-->
 
-      <segmentGroup id = "dend4_1111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_1111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2470"/>
         <member segment = "2471"/>
         <member segment = "2472"/>
@@ -12804,10 +12804,10 @@
 
 <!-- Section: dend3_1222 (segmentGroup: dend3_1222) which has 64 3D points, so 63 segment(s)-->
 
-      <segmentGroup id = "dend3_1222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2389"/>
         <member segment = "2390"/>
         <member segment = "2391"/>
@@ -12876,10 +12876,10 @@
 
 <!-- Section: dend3_1221 (segmentGroup: dend3_1221) which has 18 3D points, so 17 segment(s)-->
 
-      <segmentGroup id = "dend3_1221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2294"/>
         <member segment = "2295"/>
         <member segment = "2296"/>
@@ -12902,10 +12902,10 @@
 
 <!-- Section: dend3_1212 (segmentGroup: dend3_1212) which has 12 3D points, so 11 segment(s)-->
 
-      <segmentGroup id = "dend3_1212"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1212"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1808"/>
         <member segment = "1809"/>
         <member segment = "1810"/>
@@ -12922,10 +12922,10 @@
 
 <!-- Section: dend3_1211 (segmentGroup: dend3_1211) which has 64 3D points, so 63 segment(s)-->
 
-      <segmentGroup id = "dend3_1211"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1211"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1745"/>
         <member segment = "1746"/>
         <member segment = "1747"/>
@@ -12994,10 +12994,10 @@
 
 <!-- Section: dend3_1122 (segmentGroup: dend3_1122) which has 52 3D points, so 51 segment(s)-->
 
-      <segmentGroup id = "dend3_1122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1683"/>
         <member segment = "1684"/>
         <member segment = "1685"/>
@@ -13054,10 +13054,10 @@
 
 <!-- Section: dend3_1121 (segmentGroup: dend3_1121) which has 51 3D points, so 50 segment(s)-->
 
-      <segmentGroup id = "dend3_1121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1633"/>
         <member segment = "1634"/>
         <member segment = "1635"/>
@@ -13113,10 +13113,10 @@
 
 <!-- Section: dend3_1112 (segmentGroup: dend3_1112) which has 29 3D points, so 28 segment(s)-->
 
-      <segmentGroup id = "dend3_1112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1522"/>
         <member segment = "1523"/>
         <member segment = "1524"/>
@@ -13150,10 +13150,10 @@
 
 <!-- Section: dend3_1111 (segmentGroup: dend3_1111) which has 71 3D points, so 70 segment(s)-->
 
-      <segmentGroup id = "dend3_1111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1452"/>
         <member segment = "1453"/>
         <member segment = "1454"/>
@@ -13229,10 +13229,10 @@
 
 <!-- Section: dend2_1222 (segmentGroup: dend2_1222) which has 35 3D points, so 34 segment(s)-->
 
-      <segmentGroup id = "dend2_1222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1331"/>
         <member segment = "1332"/>
         <member segment = "1333"/>
@@ -13272,10 +13272,10 @@
 
 <!-- Section: dend2_1221 (segmentGroup: dend2_1221) which has 19 3D points, so 18 segment(s)-->
 
-      <segmentGroup id = "dend2_1221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1276"/>
         <member segment = "1277"/>
         <member segment = "1278"/>
@@ -13299,10 +13299,10 @@
 
 <!-- Section: dend2_1212 (segmentGroup: dend2_1212) which has 38 3D points, so 37 segment(s)-->
 
-      <segmentGroup id = "dend2_1212"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1212"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1119"/>
         <member segment = "1120"/>
         <member segment = "1121"/>
@@ -13345,10 +13345,10 @@
 
 <!-- Section: dend2_1211 (segmentGroup: dend2_1211) which has 13 3D points, so 12 segment(s)-->
 
-      <segmentGroup id = "dend2_1211"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1211"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "800"/>
         <member segment = "801"/>
         <member segment = "802"/>
@@ -13366,10 +13366,10 @@
 
 <!-- Section: dend2_1122 (segmentGroup: dend2_1122) which has 55 3D points, so 54 segment(s)-->
 
-      <segmentGroup id = "dend2_1122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "726"/>
         <member segment = "727"/>
         <member segment = "728"/>
@@ -13429,10 +13429,10 @@
 
 <!-- Section: dend2_1121 (segmentGroup: dend2_1121) which has 42 3D points, so 41 segment(s)-->
 
-      <segmentGroup id = "dend2_1121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "685"/>
         <member segment = "686"/>
         <member segment = "687"/>
@@ -13479,10 +13479,10 @@
 
 <!-- Section: dend2_1112 (segmentGroup: dend2_1112) which has 82 3D points, so 81 segment(s)-->
 
-      <segmentGroup id = "dend2_1112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "588"/>
         <member segment = "589"/>
         <member segment = "590"/>
@@ -13569,10 +13569,10 @@
 
 <!-- Section: dend2_1111 (segmentGroup: dend2_1111) which has 46 3D points, so 45 segment(s)-->
 
-      <segmentGroup id = "dend2_1111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "543"/>
         <member segment = "544"/>
         <member segment = "545"/>
@@ -13623,10 +13623,10 @@
 
 <!-- Section: dend1_1222 (segmentGroup: dend1_1222) which has 14 3D points, so 13 segment(s)-->
 
-      <segmentGroup id = "dend1_1222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_1222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "405"/>
         <member segment = "406"/>
         <member segment = "407"/>
@@ -13645,10 +13645,10 @@
 
 <!-- Section: dend1_1221 (segmentGroup: dend1_1221) which has 50 3D points, so 49 segment(s)-->
 
-      <segmentGroup id = "dend1_1221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_1221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "356"/>
         <member segment = "357"/>
         <member segment = "358"/>
@@ -13703,10 +13703,10 @@
 
 <!-- Section: dend1_1212 (segmentGroup: dend1_1212) which has 53 3D points, so 52 segment(s)-->
 
-      <segmentGroup id = "dend1_1212"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_1212"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "299"/>
         <member segment = "300"/>
         <member segment = "301"/>
@@ -13764,10 +13764,10 @@
 
 <!-- Section: dend1_1211 (segmentGroup: dend1_1211) which has 50 3D points, so 49 segment(s)-->
 
-      <segmentGroup id = "dend1_1211"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_1211"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "250"/>
         <member segment = "251"/>
         <member segment = "252"/>
@@ -13822,10 +13822,10 @@
 
 <!-- Section: dend1_1122 (segmentGroup: dend1_1122) which has 58 3D points, so 57 segment(s)-->
 
-      <segmentGroup id = "dend1_1122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_1122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "175"/>
         <member segment = "176"/>
         <member segment = "177"/>
@@ -13888,10 +13888,10 @@
 
 <!-- Section: dend1_1121 (segmentGroup: dend1_1121) which has 44 3D points, so 43 segment(s)-->
 
-      <segmentGroup id = "dend1_1121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_1121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "132"/>
         <member segment = "133"/>
         <member segment = "134"/>
@@ -13940,10 +13940,10 @@
 
 <!-- Section: dend1_1112 (segmentGroup: dend1_1112) which has 55 3D points, so 54 segment(s)-->
 
-      <segmentGroup id = "dend1_1112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_1112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "72"/>
         <member segment = "73"/>
         <member segment = "74"/>
@@ -14003,10 +14003,10 @@
 
 <!-- Section: dend1_1111 (segmentGroup: dend1_1111) which has 59 3D points, so 58 segment(s)-->
 
-      <segmentGroup id = "dend1_1111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_1111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "14"/>
         <member segment = "15"/>
         <member segment = "16"/>
@@ -14070,10 +14070,10 @@
 
 <!-- Section: dend4_12222 (segmentGroup: dend4_12222) which has 43 3D points, so 42 segment(s)-->
 
-      <segmentGroup id = "dend4_12222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_12222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2903"/>
         <member segment = "2904"/>
         <member segment = "2905"/>
@@ -14121,10 +14121,10 @@
 
 <!-- Section: dend4_12221 (segmentGroup: dend4_12221) which has 44 3D points, so 43 segment(s)-->
 
-      <segmentGroup id = "dend4_12221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_12221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2860"/>
         <member segment = "2861"/>
         <member segment = "2862"/>
@@ -14173,10 +14173,10 @@
 
 <!-- Section: dend4_11122 (segmentGroup: dend4_11122) which has 41 3D points, so 40 segment(s)-->
 
-      <segmentGroup id = "dend4_11122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_11122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2585"/>
         <member segment = "2586"/>
         <member segment = "2587"/>
@@ -14222,10 +14222,10 @@
 
 <!-- Section: dend4_11121 (segmentGroup: dend4_11121) which has 54 3D points, so 53 segment(s)-->
 
-      <segmentGroup id = "dend4_11121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend4_11121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2532"/>
         <member segment = "2533"/>
         <member segment = "2534"/>
@@ -14284,10 +14284,10 @@
 
 <!-- Section: dend3_12212 (segmentGroup: dend3_12212) which has 46 3D points, so 45 segment(s)-->
 
-      <segmentGroup id = "dend3_12212"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12212"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2344"/>
         <member segment = "2345"/>
         <member segment = "2346"/>
@@ -14338,10 +14338,10 @@
 
 <!-- Section: dend3_12211 (segmentGroup: dend3_12211) which has 34 3D points, so 33 segment(s)-->
 
-      <segmentGroup id = "dend3_12211"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12211"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2311"/>
         <member segment = "2312"/>
         <member segment = "2313"/>
@@ -14380,10 +14380,10 @@
 
 <!-- Section: dend3_12122 (segmentGroup: dend3_12122) which has 5 3D points, so 4 segment(s)-->
 
-      <segmentGroup id = "dend3_12122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1863"/>
         <member segment = "1864"/>
         <member segment = "1865"/>
@@ -14393,10 +14393,10 @@
 
 <!-- Section: dend3_12121 (segmentGroup: dend3_12121) which has 45 3D points, so 44 segment(s)-->
 
-      <segmentGroup id = "dend3_12121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1819"/>
         <member segment = "1820"/>
         <member segment = "1821"/>
@@ -14446,10 +14446,10 @@
 
 <!-- Section: dend3_11122 (segmentGroup: dend3_11122) which has 39 3D points, so 38 segment(s)-->
 
-      <segmentGroup id = "dend3_11122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_11122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1590"/>
         <member segment = "1591"/>
         <member segment = "1592"/>
@@ -14493,10 +14493,10 @@
 
 <!-- Section: dend3_11121 (segmentGroup: dend3_11121) which has 41 3D points, so 40 segment(s)-->
 
-      <segmentGroup id = "dend3_11121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_11121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1550"/>
         <member segment = "1551"/>
         <member segment = "1552"/>
@@ -14542,10 +14542,10 @@
 
 <!-- Section: dend2_12222 (segmentGroup: dend2_12222) which has 31 3D points, so 30 segment(s)-->
 
-      <segmentGroup id = "dend2_12222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1387"/>
         <member segment = "1388"/>
         <member segment = "1389"/>
@@ -14581,10 +14581,10 @@
 
 <!-- Section: dend2_12221 (segmentGroup: dend2_12221) which has 23 3D points, so 22 segment(s)-->
 
-      <segmentGroup id = "dend2_12221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1365"/>
         <member segment = "1366"/>
         <member segment = "1367"/>
@@ -14612,10 +14612,10 @@
 
 <!-- Section: dend2_12212 (segmentGroup: dend2_12212) which has 22 3D points, so 21 segment(s)-->
 
-      <segmentGroup id = "dend2_12212"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12212"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1310"/>
         <member segment = "1311"/>
         <member segment = "1312"/>
@@ -14642,10 +14642,10 @@
 
 <!-- Section: dend2_12211 (segmentGroup: dend2_12211) which has 17 3D points, so 16 segment(s)-->
 
-      <segmentGroup id = "dend2_12211"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12211"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1294"/>
         <member segment = "1295"/>
         <member segment = "1296"/>
@@ -14667,10 +14667,10 @@
 
 <!-- Section: dend2_12122 (segmentGroup: dend2_12122) which has 40 3D points, so 39 segment(s)-->
 
-      <segmentGroup id = "dend2_12122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1228"/>
         <member segment = "1229"/>
         <member segment = "1230"/>
@@ -14715,10 +14715,10 @@
 
 <!-- Section: dend2_12121 (segmentGroup: dend2_12121) which has 6 3D points, so 5 segment(s)-->
 
-      <segmentGroup id = "dend2_12121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1156"/>
         <member segment = "1157"/>
         <member segment = "1158"/>
@@ -14729,10 +14729,10 @@
 
 <!-- Section: dend2_12112 (segmentGroup: dend2_12112) which has 7 3D points, so 6 segment(s)-->
 
-      <segmentGroup id = "dend2_12112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "935"/>
         <member segment = "936"/>
         <member segment = "937"/>
@@ -14744,10 +14744,10 @@
 
 <!-- Section: dend2_12111 (segmentGroup: dend2_12111) which has 41 3D points, so 40 segment(s)-->
 
-      <segmentGroup id = "dend2_12111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "812"/>
         <member segment = "813"/>
         <member segment = "814"/>
@@ -14793,10 +14793,10 @@
 
 <!-- Section: dend1_12222 (segmentGroup: dend1_12222) which has 50 3D points, so 49 segment(s)-->
 
-      <segmentGroup id = "dend1_12222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_12222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "469"/>
         <member segment = "470"/>
         <member segment = "471"/>
@@ -14851,10 +14851,10 @@
 
 <!-- Section: dend1_12221 (segmentGroup: dend1_12221) which has 52 3D points, so 51 segment(s)-->
 
-      <segmentGroup id = "dend1_12221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend1_12221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "418"/>
         <member segment = "419"/>
         <member segment = "420"/>
@@ -14911,10 +14911,10 @@
 
 <!-- Section: dend3_121222 (segmentGroup: dend3_121222) which has 24 3D points, so 23 segment(s)-->
 
-      <segmentGroup id = "dend3_121222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_121222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1926"/>
         <member segment = "1927"/>
         <member segment = "1928"/>
@@ -14943,10 +14943,10 @@
 
 <!-- Section: dend3_121221 (segmentGroup: dend3_121221) which has 60 3D points, so 59 segment(s)-->
 
-      <segmentGroup id = "dend3_121221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_121221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1867"/>
         <member segment = "1868"/>
         <member segment = "1869"/>
@@ -15011,10 +15011,10 @@
 
 <!-- Section: dend2_121212 (segmentGroup: dend2_121212) which has 33 3D points, so 32 segment(s)-->
 
-      <segmentGroup id = "dend2_121212"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_121212"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1196"/>
         <member segment = "1197"/>
         <member segment = "1198"/>
@@ -15052,10 +15052,10 @@
 
 <!-- Section: dend2_121211 (segmentGroup: dend2_121211) which has 36 3D points, so 35 segment(s)-->
 
-      <segmentGroup id = "dend2_121211"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_121211"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1161"/>
         <member segment = "1162"/>
         <member segment = "1163"/>
@@ -15096,10 +15096,10 @@
 
 <!-- Section: dend2_121122 (segmentGroup: dend2_121122) which has 42 3D points, so 41 segment(s)-->
 
-      <segmentGroup id = "dend2_121122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_121122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1078"/>
         <member segment = "1079"/>
         <member segment = "1080"/>
@@ -15146,10 +15146,10 @@
 
 <!-- Section: dend2_121121 (segmentGroup: dend2_121121) which has 41 3D points, so 40 segment(s)-->
 
-      <segmentGroup id = "dend2_121121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_121121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "941"/>
         <member segment = "942"/>
         <member segment = "943"/>
@@ -15195,10 +15195,10 @@
 
 <!-- Section: dend2_121112 (segmentGroup: dend2_121112) which has 32 3D points, so 31 segment(s)-->
 
-      <segmentGroup id = "dend2_121112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_121112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "904"/>
         <member segment = "905"/>
         <member segment = "906"/>
@@ -15235,10 +15235,10 @@
 
 <!-- Section: dend2_121111 (segmentGroup: dend2_121111) which has 53 3D points, so 52 segment(s)-->
 
-      <segmentGroup id = "dend2_121111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_121111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "852"/>
         <member segment = "853"/>
         <member segment = "854"/>
@@ -15296,10 +15296,10 @@
 
 <!-- Section: dend3_1212222 (segmentGroup: dend3_1212222) which has 21 3D points, so 20 segment(s)-->
 
-      <segmentGroup id = "dend3_1212222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1212222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1990"/>
         <member segment = "1991"/>
         <member segment = "1992"/>
@@ -15325,10 +15325,10 @@
 
 <!-- Section: dend3_1212221 (segmentGroup: dend3_1212221) which has 42 3D points, so 41 segment(s)-->
 
-      <segmentGroup id = "dend3_1212221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1212221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1949"/>
         <member segment = "1950"/>
         <member segment = "1951"/>
@@ -15375,10 +15375,10 @@
 
 <!-- Section: dend2_1211212 (segmentGroup: dend2_1211212) which has 11 3D points, so 10 segment(s)-->
 
-      <segmentGroup id = "dend2_1211212"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1211212"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "999"/>
         <member segment = "1000"/>
         <member segment = "1001"/>
@@ -15394,10 +15394,10 @@
 
 <!-- Section: dend2_1211211 (segmentGroup: dend2_1211211) which has 19 3D points, so 18 segment(s)-->
 
-      <segmentGroup id = "dend2_1211211"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_1211211"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "981"/>
         <member segment = "982"/>
         <member segment = "983"/>
@@ -15421,10 +15421,10 @@
 
 <!-- Section: dend3_12122222 (segmentGroup: dend3_12122222) which has 25 3D points, so 24 segment(s)-->
 
-      <segmentGroup id = "dend3_12122222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12122222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2084"/>
         <member segment = "2085"/>
         <member segment = "2086"/>
@@ -15454,10 +15454,10 @@
 
 <!-- Section: dend3_12122221 (segmentGroup: dend3_12122221) which has 75 3D points, so 74 segment(s)-->
 
-      <segmentGroup id = "dend3_12122221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12122221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2010"/>
         <member segment = "2011"/>
         <member segment = "2012"/>
@@ -15537,10 +15537,10 @@
 
 <!-- Section: dend2_12112122 (segmentGroup: dend2_12112122) which has 47 3D points, so 46 segment(s)-->
 
-      <segmentGroup id = "dend2_12112122"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12112122"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1032"/>
         <member segment = "1033"/>
         <member segment = "1034"/>
@@ -15592,10 +15592,10 @@
 
 <!-- Section: dend2_12112121 (segmentGroup: dend2_12112121) which has 24 3D points, so 23 segment(s)-->
 
-      <segmentGroup id = "dend2_12112121"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend2_12112121"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "1009"/>
         <member segment = "1010"/>
         <member segment = "1011"/>
@@ -15624,10 +15624,10 @@
 
 <!-- Section: dend3_121222222 (segmentGroup: dend3_121222222) which has 33 3D points, so 32 segment(s)-->
 
-      <segmentGroup id = "dend3_121222222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_121222222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2192"/>
         <member segment = "2193"/>
         <member segment = "2194"/>
@@ -15665,10 +15665,10 @@
 
 <!-- Section: dend3_121222221 (segmentGroup: dend3_121222221) which has 23 3D points, so 22 segment(s)-->
 
-      <segmentGroup id = "dend3_121222221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_121222221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2108"/>
         <member segment = "2109"/>
         <member segment = "2110"/>
@@ -15696,10 +15696,10 @@
 
 <!-- Section: dend3_1212222222 (segmentGroup: dend3_1212222222) which has 36 3D points, so 35 segment(s)-->
 
-      <segmentGroup id = "dend3_1212222222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1212222222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2242"/>
         <member segment = "2243"/>
         <member segment = "2244"/>
@@ -15740,10 +15740,10 @@
 
 <!-- Section: dend3_1212222221 (segmentGroup: dend3_1212222221) which has 19 3D points, so 18 segment(s)-->
 
-      <segmentGroup id = "dend3_1212222221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1212222221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2224"/>
         <member segment = "2225"/>
         <member segment = "2226"/>
@@ -15767,10 +15767,10 @@
 
 <!-- Section: dend3_1212222212 (segmentGroup: dend3_1212222212) which has 28 3D points, so 27 segment(s)-->
 
-      <segmentGroup id = "dend3_1212222212"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1212222212"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2165"/>
         <member segment = "2166"/>
         <member segment = "2167"/>
@@ -15803,10 +15803,10 @@
 
 <!-- Section: dend3_1212222211 (segmentGroup: dend3_1212222211) which has 12 3D points, so 11 segment(s)-->
 
-      <segmentGroup id = "dend3_1212222211"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_1212222211"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2130"/>
         <member segment = "2131"/>
         <member segment = "2132"/>
@@ -15823,10 +15823,10 @@
 
 <!-- Section: dend3_12122222222 (segmentGroup: dend3_12122222222) which has 5 3D points, so 4 segment(s)-->
 
-      <segmentGroup id = "dend3_12122222222"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12122222222"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2284"/>
         <member segment = "2285"/>
         <member segment = "2286"/>
@@ -15836,10 +15836,10 @@
 
 <!-- Section: dend3_12122222221 (segmentGroup: dend3_12122222221) which has 8 3D points, so 7 segment(s)-->
 
-      <segmentGroup id = "dend3_12122222221"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12122222221"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2277"/>
         <member segment = "2278"/>
         <member segment = "2279"/>
@@ -15852,10 +15852,10 @@
 
 <!-- Section: dend3_12122222112 (segmentGroup: dend3_12122222112) which has 19 3D points, so 18 segment(s)-->
 
-      <segmentGroup id = "dend3_12122222112"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12122222112"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2147"/>
         <member segment = "2148"/>
         <member segment = "2149"/>
@@ -15879,10 +15879,10 @@
 
 <!-- Section: dend3_12122222111 (segmentGroup: dend3_12122222111) which has 7 3D points, so 6 segment(s)-->
 
-      <segmentGroup id = "dend3_12122222111"  neuroLexId="sao864921383">    <!--
-             This group contains an unbranched set of segments, and all of the segmentGroups marked with
+      <segmentGroup id = "dend3_12122222111"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
              neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
-             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections -->
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <member segment = "2141"/>
         <member segment = "2142"/>
         <member segment = "2143"/>
@@ -15998,6 +15998,16 @@
         <include segmentGroup = "dend3_12122222112"/>
         <include segmentGroup = "dend3_12122222111"/>
       </segmentGroup>
+
     </morphology>
-  </cell>
+  </cell> 
+
+  <network id="network" type="networkWithTemperature" temperature="6 degC">
+    <population id="Pop_Cell0" component="Cell0" size="1" type="populationList">
+        <instance id="0">
+            <location x="0" y="0" z="0"/>
+        </instance>
+    </population>
+  </network>
+ 
 </neuroml>
