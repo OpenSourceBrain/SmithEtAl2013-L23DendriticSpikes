@@ -64,4 +64,19 @@ Channel information
 <a href="kv.tau.png"><img alt="kv time course" src="kv.tau.png" height="220"/></a>
 </td>
 </tr>
+<tr>
+<td width="120px">
+        <sup><b>km</b><br/>
+        <a href="../km.channel.nml">km.channel.nml</a><br/>
+        <b>Ion: k</b><br/>
+        <i>g = gmax * n </i><br/>
+        ...</sup>
+</td>
+<td>
+<a href="km.inf.png"><img alt="km steady state" src="km.inf.png" height="220"/></a>
+</td>
+<td>
+<a href="km.tau.png"><img alt="km time course" src="km.tau.png" height="220"/></a>
+</td>
+</tr>
 </table>
