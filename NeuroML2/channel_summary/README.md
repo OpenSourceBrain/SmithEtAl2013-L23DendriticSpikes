@@ -34,4 +34,19 @@ Channel information
 <a href="ca.tau.png"><img alt="ca time course" src="ca.tau.png" height="220"/></a>
 </td>
 </tr>
+<tr>
+<td width="120px">
+        <sup><b>na</b><br/>
+        <a href="../na.channel.nml">na.channel.nml</a><br/>
+        <b>Ion: na</b><br/>
+        <i>g = gmax * m<sup>3</sup> * h </i><br/>
+        ...</sup>
+</td>
+<td>
+<a href="na.inf.png"><img alt="na steady state" src="na.inf.png" height="220"/></a>
+</td>
+<td>
+<a href="na.tau.png"><img alt="na time course" src="na.tau.png" height="220"/></a>
+</td>
+</tr>
 </table>
