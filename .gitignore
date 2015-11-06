@@ -1,7 +1,7 @@
 /NEURON/temp.pkl
-/NEURON/saveClass.pyc
-/NEURON/libcell.pyc
+/NEURON/*.pyc
 /NEURON/test/*.dat
+/NEURON/test/*.pkl
 *.bak
 *~
 generatedNeuroML
