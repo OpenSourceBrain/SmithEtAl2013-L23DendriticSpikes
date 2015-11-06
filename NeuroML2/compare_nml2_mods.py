@@ -1,8 +1,8 @@
 import matplotlib.pyplot as pylab
 import os.path
 
-chans = ['ca', 'it', 'na']
-gates = ['m', 'h']
+chans = ['ca', 'it', 'na', 'kv']
+gates = ['m', 'h', 'n']
 
 for channel_id in chans:
 

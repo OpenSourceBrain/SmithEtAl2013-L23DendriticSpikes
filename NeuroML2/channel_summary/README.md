@@ -49,4 +49,19 @@ Channel information
 <a href="na.tau.png"><img alt="na time course" src="na.tau.png" height="220"/></a>
 </td>
 </tr>
+<tr>
+<td width="120px">
+        <sup><b>kv</b><br/>
+        <a href="../kv.channel.nml">kv.channel.nml</a><br/>
+        <b>Ion: k</b><br/>
+        <i>g = gmax * n </i><br/>
+        ...</sup>
+</td>
+<td>
+<a href="kv.inf.png"><img alt="kv steady state" src="kv.inf.png" height="220"/></a>
+</td>
+<td>
+<a href="kv.tau.png"><img alt="kv time course" src="kv.tau.png" height="220"/></a>
+</td>
+</tr>
 </table>
