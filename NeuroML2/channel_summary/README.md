@@ -7,7 +7,7 @@ Channel information
     <tr>
 <td width="120px">
             <sup><b>it</b><br/>
-            <a href="../it.channel.nml">ca.channel.nml</a><br/>
+            <a href="../it.channel.nml">it.channel.nml</a><br/>
             <b>Ion: ca</b><br/>
             <i>g = gmax * m<sup>2</sup> * h </i><br/>
             ...</sup>
