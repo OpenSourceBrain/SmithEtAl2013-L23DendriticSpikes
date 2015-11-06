@@ -2,6 +2,7 @@
 /NEURON/*.pyc
 /NEURON/test/*.dat
 /NEURON/test/*.pkl
+/NEURON/test/*.pyc
 *.bak
 *~
 generatedNeuroML
