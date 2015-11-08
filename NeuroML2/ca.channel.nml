@@ -20,9 +20,8 @@ HVA Ca current
 Based on Reuveni, Friedman, Amitai and Gutnick (1993) J. Neurosci. 13:
 4609-4621.
 
-Author: Zach Mainen, Salk Institute, 1994, zach@salk.edu</notes>
+Author: Zach Mainen, Salk Institute, 1994, zach@salk.edu
 	</notes>
-
         <annotation>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 <rdf:Description rdf:about="ca">
