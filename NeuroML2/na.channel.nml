@@ -5,7 +5,37 @@
 
     <ionChannel id="na" conductance="0 pS" type="ionChannelHH" species="na">
 
-        <notes>...</notes>
+        <notes>Sodium channel, Hodgkin-Huxley style kinetics.
+
+WARNING: Global parameter "vshift" from modfile has not been implemented.
+
+Comments from original mod file:
+
+26 Ago 2002 Modification of original channel to allow variable time
+step and to correct an initialization error.
+    Done by Michael Hines(michael.hines@yale.e) and Ruggero
+Scorcioni(rscorcio@gmu.edu) at EU Advance Course in Computational
+Neuroscience. Obidos, Portugal
+11 Jan 2007
+    Glitch in trap where (v/th) was where (v-th)/q is. (thanks Ronald
+van Elburg!)
+
+na.mod
+
+Sodium channel, Hodgkin-Huxley style kinetics.
+
+Kinetics were fit to data from Huguenard et al. (1988) and Hamill et
+al. (1991)
+
+qi is not well constrained by the data, since there are no points
+between -80 and -55.  So this was fixed at 5 while the thi1,thi2,Rg,Rd
+were optimized using a simplex least square proc
+
+voltage dependencies are shifted approximately from the best
+fit to give higher threshold
+
+Author: Zach Mainen, Salk Institute, 1994, zach@salk.edu
+</notes>
 
         <annotation>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -13,8 +43,12 @@
 
                     <bqmodel:isDescribedBy xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
                         <rdf:Bag>
-                            <rdf:li>....</rdf:li>
-                            <rdf:li rdf:resource="..."/>
+                            <rdf:li>na3h5 Sodium channel, Hodgkin-Huxley style kinetics. Data from Huguenard et al. (1988) and Hamill et
+al. (1991)</rdf:li>
+                            <rdf:li>Developmental changes in Na+ conductances in rat neocortical neurons: appearance of a slowly inactivating component. Huguenard JR1, Hamill OP, Prince DA. J Neurophysiol. 1988 Mar;59(3):778-95.</rdf:li>
+                            <rdf:li rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/2452862"/>
+                            <rdf:li>Patch-Clamp Studies of Voltage-Gated Currents in Identified Neurons of the Rat Cerebral Cortex. O. P. Hamill⇑, J. R. Huguenard and D. A. Prince. Cereb. Cortex (1991) 1 (1): 48-61.</rdf:li>
+                            <rdf:li rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/1668364"/>
                         </rdf:Bag>
                     </bqmodel:isDescribedBy>
 
@@ -24,7 +58,6 @@
                             <rdf:li rdf:resource="http://senselab.med.yale.edu/neurondb/channelGene2.aspx#table2"/>
                         </rdf:Bag>
                     </bqbiol:isVersionOf>
-
                 </rdf:Description>
             </rdf:RDF>
         </annotation>
