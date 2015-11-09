@@ -26,7 +26,7 @@ changed for use with Ri18  (B.Kampa 2005)
                         <rdf:Bag>
                             <rdf:li>Talamic Ca current inspired by Destexhe and Huguenard. Uses fixed eca instead of GHK equation.</rdf:li>
                             <rdf:li rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/16837590"/>
-                            <rdf:li rdf:resource="https://senselab.med.yale.edu/ModelDB/showmodel.cshtml?model=108458&file=/KampaStuart2006/mod/CaT.mod"/>
+                            <rdf:li rdf:resource="https://senselab.med.yale.edu/ModelDB/showmodel.cshtml?model=108458"/>
                         </rdf:Bag>
                     </bqmodel:isDescribedBy>
 

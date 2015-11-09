@@ -29,7 +29,7 @@ Author: Zach Mainen, Salk Institute, 1995, zach@salk.edu
                         <rdf:Bag>
                             <rdf:li>Adapted from the channel used in "Influence of dendritic structure on firing pattern in model neocortical neurons". Mainen ZF, Sejnowski TJ. Nature. 1996 Jul 25;382(6589):363-6.</rdf:li>
                             <rdf:li rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/8684467"/>
-                            <rdf:li rdf:resource="http://senselab.med.yale.edu/modeldb/showmodel.cshtml?model=2488&file=\patdemo\km.mod"/>
+                            <rdf:li rdf:resource="http://senselab.med.yale.edu/modeldb/showmodel.cshtml"/>
                         </rdf:Bag>
                     </bqmodel:isDescribedBy>
 
