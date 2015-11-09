@@ -5,7 +5,7 @@
 
     <ionChannel id="km" conductance="0 pS" type="ionChannelHH" species="k">
 
-	<notes>Ca Current Potassium channel, Hodgkin-Huxley style kinetics
+	<notes>Potassium channel, Hodgkin-Huxley style kinetics
 	
 Comments from original mod file:
 
