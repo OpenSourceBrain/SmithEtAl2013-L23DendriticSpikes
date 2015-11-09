@@ -5,7 +5,21 @@
 
     <ionChannel id="km" conductance="0 pS" type="ionChannelHH" species="k">
 
-        <notes>...</notes>
+	<notes>Ca Current Potassium channel, Hodgkin-Huxley style kinetics
+	
+Comments from original mod file:
+
+26 Ago 2002 Modification of original channel to allow variable time step and to correct an initialization error.
+    Done by Michael Hines(michael.hines@yale.e) and Ruggero Scorcioni(rscorcio@gmu.edu) at EU Advance Course in Computational Neuroscience. Obidos, Portugal
+
+km.mod
+
+Potassium channel, Hodgkin-Huxley style kinetics
+Based on I-M (muscarinic K channel)
+Slow, noninactivating
+
+Author: Zach Mainen, Salk Institute, 1995, zach@salk.edu
+	</notes>
 
         <annotation>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -13,8 +27,9 @@
 
                     <bqmodel:isDescribedBy xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
                         <rdf:Bag>
-                            <rdf:li>....</rdf:li>
-                            <rdf:li rdf:resource="..."/>
+                            <rdf:li>Adapted from the channel used in "Influence of dendritic structure on firing pattern in model neocortical neurons". Mainen ZF, Sejnowski TJ. Nature. 1996 Jul 25;382(6589):363-6.</rdf:li>
+                            <rdf:li rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/8684467"/>
+                            <rdf:li rdf:resource="http://senselab.med.yale.edu/modeldb/showmodel.cshtml?model=2488&file=\patdemo\km.mod"/>
                         </rdf:Bag>
                     </bqmodel:isDescribedBy>
 
