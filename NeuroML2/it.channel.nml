@@ -6,6 +6,9 @@
     <ionChannel id="it" conductance="0 pS" type="ionChannelHH" species="ca">
 
         <notes>T-type Ca channel
+
+WARNING: Global parameter "vshift" from modfile has not been implemented.
+
 Comments from original mod file:
 
 T-type Ca channel
