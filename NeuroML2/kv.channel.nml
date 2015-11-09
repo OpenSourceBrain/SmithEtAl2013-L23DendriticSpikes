@@ -4,8 +4,21 @@
     <notes>NeuroML file containing a single Channel description</notes>
 
     <ionChannel id="kv" conductance="0 pS" type="ionChannelHH" species="k">
+	<notes>Potassium channel, Hodgkin-Huxley style kinetics
+	
+Comments from original mod file:
 
-        <notes>...</notes>
+26 Ago 2002 Modification of original channel to allow variable time step and to correct an initialization error.
+    Done by Michael Hines(michael.hines@yale.e) and Ruggero Scorcioni(rscorcio@gmu.edu) at EU Advance Course in Computational Neuroscience. Obidos, Portugal
+
+kv.mod
+
+Potassium channel, Hodgkin-Huxley style kinetics
+Kinetic rates based roughly on Sah et al. and Hamill et al. (1991)
+
+Author: Zach Mainen, Salk Institute, 1995, zach@salk.edu
+	</notes>
+
 
         <annotation>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -13,8 +26,11 @@
 
                     <bqmodel:isDescribedBy xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
                         <rdf:Bag>
-                            <rdf:li>....</rdf:li>
-                            <rdf:li rdf:resource="..."/>
+                            <rdf:li>Kinetic rates based roughly on "Patch-clamp studies of voltage-gated currents in identified neurons of the rat cerebral cortex.
+ Hamill, O. P., Huguenard, J. R. and Prince, D. A. Cerebral Cortex 1, 48−61 (1991).</rdf:li>
+                            <rdf:li rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/1668364"/>
+                            <rdf:li>Kinetic rates based roughly on "Potassium current activated by depolarization of dissociated neurons from adult guinea pig hippocampus". Sah P1, Gibb AJ, Gage PW. J Gen Physiol. 1988 Aug;92(2):263-78.</rdf:li>
+                            <rdf:li rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/2844959"/>
                         </rdf:Bag>
                     </bqmodel:isDescribedBy>
 
