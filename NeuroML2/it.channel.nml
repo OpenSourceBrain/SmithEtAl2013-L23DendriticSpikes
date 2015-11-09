@@ -5,16 +5,25 @@
 
     <ionChannel id="it" conductance="0 pS" type="ionChannelHH" species="ca">
 
-        <notes>...</notes>
+        <notes>T-type Ca channel
+Comments from original mod file:
+
+T-type Ca channel
+ca.mod to lead to thalamic ca current inspired by destexhe and huguenrd
+Uses fixed eca instead of GHK eqn
+changed from (AS Oct0899)
+changed for use with Ri18  (B.Kampa 2005)
+	</notes>
                 
         <annotation>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about="IT">
+                <rdf:Description rdf:about="it">
                     
                     <bqmodel:isDescribedBy xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
                         <rdf:Bag>
-                            <rdf:li>....</rdf:li>
-                            <rdf:li rdf:resource="..."/>
+                            <rdf:li>Talamic Ca current inspired by Destexhe and Huguenard. Uses fixed eca instead of GHK equation.</rdf:li>
+                            <rdf:li rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/16837590"/>
+                            <rdf:li rdf:resource="https://senselab.med.yale.edu/ModelDB/showmodel.cshtml?model=108458&file=/KampaStuart2006/mod/CaT.mod"/>
                         </rdf:Bag>
                     </bqmodel:isDescribedBy>
 
