@@ -61,7 +61,8 @@ al. (1991)</rdf:li>
                 </rdf:Description>
             </rdf:RDF>
         </annotation>
-
+	
+	<q10ConductanceScaling q10Factor="2.3" experimentalTemp="23degC"/>
 
         <gate id="m" type="gateHHrates" instances="3">
        	    <q10Settings type="q10ExpTemp" q10Factor="2.3" experimentalTemp="23degC"/>

@@ -14,6 +14,8 @@
                     Author: Zach Mainen, Salk Institute, 1995, zach@salk.edu
         </notes>
 
+	<q10ConductanceScaling q10Factor="2.3" experimentalTemp="23degC"/>
+
         <gate id="n" type="gateHHrates" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="2.3" experimentalTemp="23 degC"/>
             <forwardRate type="kca_n_alpha_rate"/>

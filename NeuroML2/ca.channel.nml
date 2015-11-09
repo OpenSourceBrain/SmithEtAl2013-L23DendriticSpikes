@@ -44,6 +44,7 @@ Author: Zach Mainen, Salk Institute, 1994, zach@salk.edu
             </rdf:RDF>
         </annotation>
 
+	<q10ConductanceScaling q10Factor="2.3" experimentalTemp="23degC"/>
 
         <gate id="m" type="gateHHrates" instances="2">
        	    <q10Settings type="q10ExpTemp" q10Factor="2.3" experimentalTemp="23degC"/>
