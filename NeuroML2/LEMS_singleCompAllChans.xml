@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Lems xmlns="http://www.neuroml.org/lems/0.7.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/lems/0.7.2  https://raw.github.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.2.xsd">
+
+  <Target component="sim1" reportFile="simulator.props" timesFile="time.dat"/>
+
+  <!--Include standard NeuroML 2 ComponentType definitions-->
+  <Include file="Cells.xml"/>
+  <Include file="Networks.xml"/>
+  <Include file="Simulation.xml"/>
+  <!-- Channel/synapse files-->
+  <Include file="na.channel.nml"/>
+  <Include file="km.channel.nml"/>
+  <Include file="kv.channel.nml"/>
+  <Include file="ca.channel.nml"/>
+  <Include file="kca.channel.nml"/>
+  <Include file="it.channel.nml"/>
+  <Include file="pas.channel.nml"/>
+  <!--   Cell files-->
+  <Include file="singleCompAllChans.cell.nml"/>
+  <!--   Network file-->
+  <Include file="singleCompAllChans.net.nml"/>
+  <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ...
+  is used to allow validation of this file according to the LEMS schema specified above...-->
+  <Component type="Simulation" id="sim1" length="600ms" step="0.001 ms" target="net">
+
+    <Display id="" title="v"  xmin="0" xmax="600" ymin="-100.0" ymax="100" timeScale="1ms">
+      <Line id="VOLTAGE" timeScale="1ms" quantity="pop/0/cell/v" scale="1 mV" color="#000000"/>
+    </Display>
+    <Display id="d2" title="Ca current density (uA_per_cm2)" timeScale="1ms" xmin="0" xmax="600" ymin="0" ymax="3">
+      <Line id="Ca iDensity" quantity="pop/0/cell/biophys/membraneProperties/ca_all/iDensity" scale="1uA_per_cm2"  color="#00ff00" timeScale="1ms"/>
+    </Display>
+    <Display id="d3" title="Internal Ca concentration (mM)" timeScale="1ms" xmin="0" xmax="600" ymin="0" ymax="30">
+      <Line id="caConc" quantity="pop/0/cell/caConc" scale="1e-6 mM"  color="#ff0000" timeScale="1ms"/>
+    </Display>
+    <OutputFile id="outf" fileName="jlems_sccct.dat">
+      <OutputColumn id="v" quantity="pop/0/cell/v"/>
+      <OutputColumn id="ca" quantity="pop/0/cell/caConc"/>
+      <OutputColumn id="ica" quantity="pop/0/cell/biophys/membraneProperties/ca_all/iDensity"/>
+      <!-- <OutputColumn id="m_x" quantity="pop/0/cell/biophys/membraneProperties/x_all/x/m/q"/> -->
+    </OutputFile>
+  </Component>
+</Lems>
