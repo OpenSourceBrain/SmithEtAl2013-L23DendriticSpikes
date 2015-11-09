@@ -39,7 +39,7 @@ def run_iclamp(iRange, run, nogui):
     data.ACTIVEdendNa = True
     data.ACTIVEdendCa = True
     data.ACTIVEaxonSoma = True
-    data.ACTIVEhotSpot = True
+    data.ACTIVEhotSpot = False             ##### Note: no hot spots!!!
     data.SYN = False
     data.SPINES = False
     data.ICLAMP = True
