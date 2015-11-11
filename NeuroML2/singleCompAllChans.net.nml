@@ -7,7 +7,7 @@
   <include href="kca.channel.nml"/>
   <include href="it.channel.nml"/>
   <include href="pas.channel.nml"/>
-  <include href="sccct.cell.nml"/>
+  <include href="singleCompAllChans.cell.nml"/>
 
   <pulseGenerator id="iclamp0" delay="100 ms" duration="100 ms" amplitude="-0.01 nA"/>
   <pulseGenerator id="iclamp1" delay="300 ms" duration="100 ms" amplitude="0.05 nA"/>
