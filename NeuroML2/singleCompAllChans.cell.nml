@@ -48,7 +48,7 @@
                 <channelDensity condDensity="0.5e-4 S_per_cm2" id="ca_all" ionChannel="ca" ion="ca" erev="140.0 mV"/>
                 <channelDensity condDensity="3.0e-4 S_per_cm2" id="kca_all" ionChannel="kca" ion="k" erev="-90 mV"/>
                 <channelDensity condDensity="0.0003 S_per_cm2" id="it_all" ionChannel="it" ion="ca" erev="140.0 mV"/>
-                <channelDensity condDensity="0.000142857142857 S_per_cm2" id="pas_all" ionChannel="pas" ion="_pas" erev="-75 mV"/>
+                <channelDensity condDensity="0.000142857142857 S_per_cm2" id="pas_all" ionChannel="pas" ion="non_specific" erev="-75 mV"/>
 
                 <spikeThresh value="0 mV"/>
                 <specificCapacitance value="1.0 uF_per_cm2"/>
@@ -56,7 +56,7 @@
 
             </membraneProperties>
 
-	<intracellularProperties/>
+            <intracellularProperties/>
 
 
         </biophysicalProperties>
