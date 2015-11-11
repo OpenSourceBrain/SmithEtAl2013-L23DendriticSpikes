@@ -23,9 +23,8 @@
         <!--   Cell files-->
     <Include file="L23_NoHotSpot.cell.nml"/>
     
-    <pulseGenerator id="stim" delay="100ms" duration="400ms" amplitude="350pA"/>
+    <pulseGenerator id="stim" delay="50ms" duration="250ms" amplitude="0.7nA"/>
 
-    
     
     <network id="TestNetwork" type="networkWithTemperature" temperature="35.0 degC">
         
@@ -37,12 +36,12 @@
             
         </population>
         <inputList id="stim_input" component="stim" population="PopL23">
-            <input destination="synapses" id="0" target="../PopL23/0/L23_NoHotSpot/v"/>
+            <input destination="synapses" id="0" target="../PopL23/0/L23_NoHotSpot"/>
         </inputList>
     </network>
     
 
-    <Component type="Simulation" id="sim1" length="600.0ms" step="0.025ms" target="TestNetwork">
+    <Component type="Simulation" id="sim1" length="400.0ms" step="0.01ms" target="TestNetwork">
         
         <Display id="v" title="Soma VOLTAGE" xmin="-60.0" xmax="660.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
             <Line id="VOLTAGE" timeScale="1ms" quantity="PopL23/0/L23_NoHotSpot/v" scale="1 mV" color="#000000"/>

@@ -16643,27 +16643,27 @@
 
       <membraneProperties> 
 
-        <channelDensity ionChannel="pas" id="pas_all"  condDensity = "0.142857 mS_per_cm2" erev="-75 mV" />
+        <channelDensity ionChannel="pas" id="pas_all"  condDensity = "0.000142857 S_per_cm2" ion="non_specific" erev="-75 mV" />
 
-        <channelDensity ionChannel="kca" id="kca_all"  condDensity = "3000 mS_per_cm2" erev="-90 mV" />
+        <channelDensity ionChannel="kca" id="kca_all"  condDensity = "3.0e-4 S_per_cm2" ion="k" erev="-90 mV" />
 
-        <channelDensity ionChannel="km" id="km_dends"  condDensity = "1000 mS_per_cm2" segmentGroup="dendrite_group"  erev="-90 mV" />
+        <channelDensity ionChannel="km" id="km_dends"  condDensity = "1e-4 S_per_cm2" ion="k" segmentGroup="dendrite_group"  erev="-90 mV" />
 
-        <channelDensity ionChannel="km" id="km_soma"  condDensity = "2200 mS_per_cm2" segmentGroup="soma_group"  erev="-90 mV" />
+        <channelDensity ionChannel="km" id="km_soma"  condDensity = "2.2e-4 S_per_cm2" ion="k" segmentGroup="soma_group"  erev="-90 mV" />
 
-        <channelDensity ionChannel="kv" id="kv_dends"  condDensity = "3000 mS_per_cm2" segmentGroup="dendrite_group"  erev="-90 mV" />
+        <channelDensity ionChannel="kv" id="kv_dends"  condDensity = "0.03 S_per_cm2" ion="k" segmentGroup="dendrite_group"  erev="-90 mV" />
 
-        <channelDensity ionChannel="kv" id="kv_soma"  condDensity = "100000 mS_per_cm2" segmentGroup="soma_group"  erev="-90 mV" />
+        <channelDensity ionChannel="kv" id="kv_soma"  condDensity = "0.01 S_per_cm2" ion="k" segmentGroup="soma_group"  erev="-90 mV" />
 
-        <channelDensity ionChannel="na" id="na_dends"  condDensity = "80000 mS_per_cm2" segmentGroup="dendrite_group"  erev="60 mV" />
+        <channelDensity ionChannel="na" id="na_dends"  condDensity = "0.008 S_per_cm2" ion="na" segmentGroup="dendrite_group"  erev="60 mV" />
 
-        <channelDensity ionChannel="na" id="na_soma"  condDensity = "1e6 mS_per_cm2" segmentGroup="soma_group"  erev="60 mV" />
+        <channelDensity ionChannel="na" id="na_soma"  condDensity = "0.1 S_per_cm2" ion="na" segmentGroup="soma_group"  erev="60 mV" />
 
-        <channelDensity ionChannel="it" id="it_soma"  condDensity = "0.3 mS_per_cm2" segmentGroup="soma_group" erev="127.57323 mV" />
+        <channelDensity ionChannel="it" id="it_soma"  condDensity = "0.0003 S_per_cm2" ion="ca" segmentGroup="soma_group" erev="127.57323 mV" />
 
-        <channelDensity ionChannel="it" id="it_dends" condDensity = "0.15 mS_per_cm2" segmentGroup="dendrite_group" erev="127.57323 mV" />        
+        <channelDensity ionChannel="it" id="it_dends" condDensity = "0.00015 S_per_cm2" ion="ca" segmentGroup="dendrite_group" erev="127.57323 mV" />        
         
-        <channelDensity ionChannel="ca" id="ca_all" condDensity = "500 mS_per_cm2" erev="127.57323 mV"/>
+        <channelDensity ionChannel="ca" id="ca_all" condDensity = "5e-5 S_per_cm2" ion="ca" erev="127.57323 mV"/>
         
         <specificCapacitance  value="1 uF_per_cm2" />
 
