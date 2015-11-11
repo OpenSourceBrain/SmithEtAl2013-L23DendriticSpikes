@@ -3,6 +3,9 @@
 from neuron import *
 from nrn import *
 
+import sys
+nogui = '-nogui' in sys.argv
+
 def create_comp(name='soma'):
     comp = h.Section(name)
 
@@ -38,7 +41,8 @@ def create_comp(name='soma'):
     comp.g_pas = 0.000142857142857
     comp.e_pas = -75
 
-
+    comp.push()
+    h.psection()
 
     return comp
 
@@ -104,5 +108,11 @@ ds = create_dumps(comp, varlist)
 
 run(600, 0.001)
 
-plot_timeseries(ds, varlist)
-dump_to_file(ds, varlist)
+if not nogui:
+    plot_timeseries(ds, varlist)
+    
+dump_to_file(ds, varlist, fname='nrn.v.dat')
+
+
+if nogui:
+    quit()
