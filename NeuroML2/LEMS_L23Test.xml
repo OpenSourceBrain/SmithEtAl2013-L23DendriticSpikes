@@ -1,0 +1,54 @@
+<Lems xmlns="http://www.neuroml.org/lems/0.7.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/lems/0.7.2  https://raw.github.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.2.xsd">
+
+    <Target component="sim1" reportFile="simulator.props" timesFile="time.dat"/>
+
+        <!--Include standard NeuroML 2 ComponentType definitions-->
+
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+
+
+        <!--   Channel/synapse files-->
+        ca.channel.nml  it.channel.nml  kca.channel.nml  km.channel.nml  kv.channel.nml  L23_morph.cell.nml  L23_NoHotSpot.cell.nml  na.channel.nml
+
+    <Include file="ca.channel.nml"/>
+    <Include file="it.channel.nml"/>
+    <Include file="kca.channel.nml"/>
+    <Include file="km.channel.nml"/>
+    <Include file="kv.channel.nml"/>
+    <Include file="na.channel.nml"/>
+    <Include file="pas.channel.nml"/>
+
+        <!--   Cell files-->
+    <Include file="L23_NoHotSpot.cell.nml"/>
+    
+    <pulseGenerator id="stim" delay="50ms" duration="250ms" amplitude="0.7nA"/>
+
+    
+    <network id="TestNetwork" type="networkWithTemperature" temperature="35.0 degC">
+        
+        <population id="PopL23" size="1" type="populationList" component="L23_NoHotSpot">
+	
+            <instance id="0">
+                <location x="0.0" z="0.0" y="0.0" />
+            </instance>
+            
+        </population>
+        <inputList id="stim_input" component="stim" population="PopL23">
+            <input destination="synapses" id="0" target="../PopL23/0/L23_NoHotSpot"/>
+        </inputList>
+    </network>
+    
+
+    <Component type="Simulation" id="sim1" length="400.0ms" step="0.01ms" target="TestNetwork">
+        
+        <Display id="v" title="Soma VOLTAGE" xmin="-60.0" xmax="660.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
+            <Line id="VOLTAGE" timeScale="1ms" quantity="PopL23/0/L23_NoHotSpot/v" scale="1 mV" color="#000000"/>
+        </Display>
+        
+        
+    </Component>
+
+
+</Lems>
