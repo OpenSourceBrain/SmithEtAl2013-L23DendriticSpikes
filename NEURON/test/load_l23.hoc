@@ -4,3 +4,7 @@ nrnpython("print os.getcwd()")
 nrnpython("from test_iclamp import run_iclamp")
 
 nrnpython("run_iclamp([0], False, True)")
+
+load_file("test/cellCheck.hoc")
+
+psection()
