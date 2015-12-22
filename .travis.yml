@@ -11,6 +11,7 @@ env:
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+    - omv install NEURON
 
 script:
     - omv all -V
