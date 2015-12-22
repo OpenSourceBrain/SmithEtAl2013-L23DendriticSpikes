@@ -12,6 +12,9 @@ env:
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
     - omv install NEURON
+    - pwd
+    - cd NEURON/test
+    - /home/travis/neuron/nrn/x86_64/bin/nrnivmodl ../mod.files
 
 script:
     - omv all -V
