@@ -3,7 +3,7 @@
 target: LEMS_singleCompAllChans.xml
 engine: jNeuroML_NEURON
 
-mep: ../NEURON/mod.files/.test.mep
+mep: ../NEURON/test/.test.mep
 experiments:
   spiking:
     observables:
