@@ -104,7 +104,7 @@ def run_iclamp(iRange, run, nogui):
         for i in range(len(times)):
             vFile.write('%s'%times[i])
             for vd in data.vdata:
-                vFile.write(',\t%s'%vd[i])
+                vFile.write('\t%s'%vd[i])
             vFile.write('\n')
 
 

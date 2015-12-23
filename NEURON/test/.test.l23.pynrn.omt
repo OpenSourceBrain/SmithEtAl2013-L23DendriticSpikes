@@ -8,9 +8,9 @@ experiments:
     observables:
       spike times:
         file: 
-          path: test/voltage.dat
-          columns: [0,1]
-          scaling: [1000, 1000]
+          path: voltage.dat
+          columns: [0,8]
+          scaling: [1, 1]
         spike detection: 
           method: threshold
           threshold: 0
