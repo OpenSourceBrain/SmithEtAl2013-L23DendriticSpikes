@@ -2,6 +2,15 @@
 
 sudo: false
 
+addons:
+  apt:
+    packages:
+       # Requirements for Brian
+    - python-numpy 
+    - python-scipy 
+    - python-matplotlib 
+    - python-sympy
+
 language: python
 python: 2.7
 
