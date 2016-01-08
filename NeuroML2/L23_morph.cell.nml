@@ -12010,9 +12010,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "0"/>
       </segmentGroup>
 
@@ -12025,9 +12023,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2452"/>
         <member segment = "2453"/>
         <member segment = "2454"/>
@@ -12046,9 +12042,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1417"/>
         <member segment = "1418"/>
         <member segment = "1419"/>
@@ -12066,9 +12060,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "518"/>
         <member segment = "519"/>
         <member segment = "520"/>
@@ -12087,9 +12079,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1"/>
         <member segment = "2"/>
       </segmentGroup>
@@ -12103,9 +12093,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2761"/>
         <member segment = "2762"/>
         <member segment = "2763"/>
@@ -12128,9 +12116,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2459"/>
         <member segment = "2460"/>
       </segmentGroup>
@@ -12144,9 +12130,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1734"/>
         <member segment = "1735"/>
         <member segment = "1736"/>
@@ -12163,9 +12147,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1423"/>
         <member segment = "1424"/>
         <member segment = "1425"/>
@@ -12191,9 +12173,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "780"/>
         <member segment = "781"/>
         <member segment = "782"/>
@@ -12218,9 +12198,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "525"/>
         <member segment = "526"/>
         <member segment = "527"/>
@@ -12240,9 +12218,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "232"/>
         <member segment = "233"/>
         <member segment = "234"/>
@@ -12259,9 +12235,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "3"/>
         <member segment = "4"/>
         <member segment = "5"/>
@@ -12277,9 +12251,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2835"/>
         <member segment = "2836"/>
         <member segment = "2837"/>
@@ -12296,9 +12268,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2772"/>
         <member segment = "2773"/>
         <member segment = "2774"/>
@@ -12373,9 +12343,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2625"/>
         <member segment = "2626"/>
         <member segment = "2627"/>
@@ -12403,9 +12371,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2461"/>
         <member segment = "2462"/>
         <member segment = "2463"/>
@@ -12426,9 +12392,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2288"/>
         <member segment = "2289"/>
         <member segment = "2290"/>
@@ -12446,9 +12410,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1739"/>
         <member segment = "1740"/>
         <member segment = "1741"/>
@@ -12466,9 +12428,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1628"/>
         <member segment = "1629"/>
         <member segment = "1630"/>
@@ -12485,9 +12445,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1437"/>
         <member segment = "1438"/>
         <member segment = "1439"/>
@@ -12514,9 +12472,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1267"/>
         <member segment = "1268"/>
         <member segment = "1269"/>
@@ -12537,9 +12493,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "793"/>
         <member segment = "794"/>
         <member segment = "795"/>
@@ -12558,9 +12512,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "669"/>
         <member segment = "670"/>
         <member segment = "671"/>
@@ -12588,9 +12540,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "533"/>
         <member segment = "534"/>
         <member segment = "535"/>
@@ -12612,9 +12562,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "351"/>
         <member segment = "352"/>
         <member segment = "353"/>
@@ -12631,9 +12579,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "237"/>
         <member segment = "238"/>
         <member segment = "239"/>
@@ -12658,9 +12604,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "126"/>
         <member segment = "127"/>
         <member segment = "128"/>
@@ -12678,9 +12622,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "7"/>
         <member segment = "8"/>
         <member segment = "9"/>
@@ -12699,9 +12641,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2855"/>
         <member segment = "2856"/>
         <member segment = "2857"/>
@@ -12718,9 +12658,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2840"/>
         <member segment = "2841"/>
         <member segment = "2842"/>
@@ -12747,9 +12685,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2698"/>
         <member segment = "2699"/>
         <member segment = "2700"/>
@@ -12824,9 +12760,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2641"/>
         <member segment = "2642"/>
         <member segment = "2643"/>
@@ -12895,9 +12829,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2527"/>
         <member segment = "2528"/>
         <member segment = "2529"/>
@@ -12914,9 +12846,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2470"/>
         <member segment = "2471"/>
         <member segment = "2472"/>
@@ -12985,9 +12915,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2389"/>
         <member segment = "2390"/>
         <member segment = "2391"/>
@@ -13062,9 +12990,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2294"/>
         <member segment = "2295"/>
         <member segment = "2296"/>
@@ -13093,9 +13019,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1808"/>
         <member segment = "1809"/>
         <member segment = "1810"/>
@@ -13118,9 +13042,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1745"/>
         <member segment = "1746"/>
         <member segment = "1747"/>
@@ -13195,9 +13117,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1683"/>
         <member segment = "1684"/>
         <member segment = "1685"/>
@@ -13260,9 +13180,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1633"/>
         <member segment = "1634"/>
         <member segment = "1635"/>
@@ -13324,9 +13242,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1522"/>
         <member segment = "1523"/>
         <member segment = "1524"/>
@@ -13366,9 +13282,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1452"/>
         <member segment = "1453"/>
         <member segment = "1454"/>
@@ -13450,9 +13364,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1331"/>
         <member segment = "1332"/>
         <member segment = "1333"/>
@@ -13498,9 +13410,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1276"/>
         <member segment = "1277"/>
         <member segment = "1278"/>
@@ -13530,9 +13440,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1119"/>
         <member segment = "1120"/>
         <member segment = "1121"/>
@@ -13581,9 +13489,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "800"/>
         <member segment = "801"/>
         <member segment = "802"/>
@@ -13607,9 +13513,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "726"/>
         <member segment = "727"/>
         <member segment = "728"/>
@@ -13675,9 +13579,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "685"/>
         <member segment = "686"/>
         <member segment = "687"/>
@@ -13730,9 +13632,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "588"/>
         <member segment = "589"/>
         <member segment = "590"/>
@@ -13825,9 +13725,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "543"/>
         <member segment = "544"/>
         <member segment = "545"/>
@@ -13884,9 +13782,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "405"/>
         <member segment = "406"/>
         <member segment = "407"/>
@@ -13911,9 +13807,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "356"/>
         <member segment = "357"/>
         <member segment = "358"/>
@@ -13974,9 +13868,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "299"/>
         <member segment = "300"/>
         <member segment = "301"/>
@@ -14040,9 +13932,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "250"/>
         <member segment = "251"/>
         <member segment = "252"/>
@@ -14103,9 +13993,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "175"/>
         <member segment = "176"/>
         <member segment = "177"/>
@@ -14174,9 +14062,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "132"/>
         <member segment = "133"/>
         <member segment = "134"/>
@@ -14231,9 +14117,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "72"/>
         <member segment = "73"/>
         <member segment = "74"/>
@@ -14299,9 +14183,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "14"/>
         <member segment = "15"/>
         <member segment = "16"/>
@@ -14371,9 +14253,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2903"/>
         <member segment = "2904"/>
         <member segment = "2905"/>
@@ -14427,9 +14307,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2860"/>
         <member segment = "2861"/>
         <member segment = "2862"/>
@@ -14484,9 +14362,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2585"/>
         <member segment = "2586"/>
         <member segment = "2587"/>
@@ -14538,9 +14414,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2532"/>
         <member segment = "2533"/>
         <member segment = "2534"/>
@@ -14605,9 +14479,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2344"/>
         <member segment = "2345"/>
         <member segment = "2346"/>
@@ -14664,9 +14536,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2311"/>
         <member segment = "2312"/>
         <member segment = "2313"/>
@@ -14711,9 +14581,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1863"/>
         <member segment = "1864"/>
         <member segment = "1865"/>
@@ -14729,9 +14597,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1819"/>
         <member segment = "1820"/>
         <member segment = "1821"/>
@@ -14787,9 +14653,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1590"/>
         <member segment = "1591"/>
         <member segment = "1592"/>
@@ -14839,9 +14703,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1550"/>
         <member segment = "1551"/>
         <member segment = "1552"/>
@@ -14893,9 +14755,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1387"/>
         <member segment = "1388"/>
         <member segment = "1389"/>
@@ -14937,9 +14797,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1365"/>
         <member segment = "1366"/>
         <member segment = "1367"/>
@@ -14973,9 +14831,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1310"/>
         <member segment = "1311"/>
         <member segment = "1312"/>
@@ -15008,9 +14864,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1294"/>
         <member segment = "1295"/>
         <member segment = "1296"/>
@@ -15038,9 +14892,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1228"/>
         <member segment = "1229"/>
         <member segment = "1230"/>
@@ -15091,9 +14943,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1156"/>
         <member segment = "1157"/>
         <member segment = "1158"/>
@@ -15110,9 +14960,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "935"/>
         <member segment = "936"/>
         <member segment = "937"/>
@@ -15130,9 +14978,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "812"/>
         <member segment = "813"/>
         <member segment = "814"/>
@@ -15184,9 +15030,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "469"/>
         <member segment = "470"/>
         <member segment = "471"/>
@@ -15247,9 +15091,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "418"/>
         <member segment = "419"/>
         <member segment = "420"/>
@@ -15312,9 +15154,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1926"/>
         <member segment = "1927"/>
         <member segment = "1928"/>
@@ -15349,9 +15189,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1867"/>
         <member segment = "1868"/>
         <member segment = "1869"/>
@@ -15422,9 +15260,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1196"/>
         <member segment = "1197"/>
         <member segment = "1198"/>
@@ -15468,9 +15304,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1161"/>
         <member segment = "1162"/>
         <member segment = "1163"/>
@@ -15517,9 +15351,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1078"/>
         <member segment = "1079"/>
         <member segment = "1080"/>
@@ -15572,9 +15404,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "941"/>
         <member segment = "942"/>
         <member segment = "943"/>
@@ -15626,9 +15456,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "904"/>
         <member segment = "905"/>
         <member segment = "906"/>
@@ -15671,9 +15499,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "852"/>
         <member segment = "853"/>
         <member segment = "854"/>
@@ -15737,9 +15563,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1990"/>
         <member segment = "1991"/>
         <member segment = "1992"/>
@@ -15771,9 +15595,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1949"/>
         <member segment = "1950"/>
         <member segment = "1951"/>
@@ -15826,9 +15648,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "999"/>
         <member segment = "1000"/>
         <member segment = "1001"/>
@@ -15850,9 +15670,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "981"/>
         <member segment = "982"/>
         <member segment = "983"/>
@@ -15882,9 +15700,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2084"/>
         <member segment = "2085"/>
         <member segment = "2086"/>
@@ -15920,9 +15736,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2010"/>
         <member segment = "2011"/>
         <member segment = "2012"/>
@@ -16008,9 +15822,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1032"/>
         <member segment = "1033"/>
         <member segment = "1034"/>
@@ -16068,9 +15880,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "1009"/>
         <member segment = "1010"/>
         <member segment = "1011"/>
@@ -16105,9 +15915,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2192"/>
         <member segment = "2193"/>
         <member segment = "2194"/>
@@ -16151,9 +15959,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2108"/>
         <member segment = "2109"/>
         <member segment = "2110"/>
@@ -16187,9 +15993,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2242"/>
         <member segment = "2243"/>
         <member segment = "2244"/>
@@ -16236,9 +16040,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2224"/>
         <member segment = "2225"/>
         <member segment = "2226"/>
@@ -16268,9 +16070,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2165"/>
         <member segment = "2166"/>
         <member segment = "2167"/>
@@ -16309,9 +16109,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2130"/>
         <member segment = "2131"/>
         <member segment = "2132"/>
@@ -16334,9 +16132,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2284"/>
         <member segment = "2285"/>
         <member segment = "2286"/>
@@ -16352,9 +16148,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2277"/>
         <member segment = "2278"/>
         <member segment = "2279"/>
@@ -16373,9 +16167,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2147"/>
         <member segment = "2148"/>
         <member segment = "2149"/>
@@ -16405,9 +16197,7 @@
              These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
         <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
         <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        <annotation>
-          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
-        </annotation>
+        
         <member segment = "2141"/>
         <member segment = "2142"/>
         <member segment = "2143"/>
