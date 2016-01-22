@@ -8,6 +8,14 @@
           Authors: Michael Hines, Sushil Kambampati and Padraig Gleeson,
           Yale University and UCL 
   </notes>
+  
+    <include href="ca.channel.nml"/>
+    <include href="it.channel.nml"/>
+    <include href="kca.channel.nml"/>
+    <include href="km.channel.nml"/>
+    <include href="kv.channel.nml"/>
+    <include href="na.channel.nml"/>
+    <include href="pas.channel.nml"/>
 
   <cell id="L23_NoHotSpot">
     <notes>Cell: Cell0 exported from NEURON ModelView</notes>
