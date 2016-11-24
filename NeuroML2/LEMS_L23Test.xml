@@ -9,9 +9,9 @@
     <Include file="Simulation.xml"/>
 
 
-        <!--   Channel/synapse files-->
+        <!--   Channel/synapse files
         ca.channel.nml  it.channel.nml  kca.channel.nml  km.channel.nml  kv.channel.nml  L23_morph.cell.nml  L23_NoHotSpot.cell.nml  na.channel.nml
-
+-->
     <Include file="ca.channel.nml"/>
     <Include file="it.channel.nml"/>
     <Include file="kca.channel.nml"/>
@@ -46,6 +46,10 @@
         <Display id="v" title="Soma VOLTAGE" xmin="-60.0" xmax="660.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
             <Line id="VOLTAGE" timeScale="1ms" quantity="PopL23/0/L23_NoHotSpot/v" scale="1 mV" color="#000000"/>
         </Display>
+        
+        <OutputFile id="outf" fileName="L23.v.dat">
+            <OutputColumn id="v" quantity="PopL23/0/L23_NoHotSpot/v"/>
+        </OutputFile>
         
         
     </Component>
