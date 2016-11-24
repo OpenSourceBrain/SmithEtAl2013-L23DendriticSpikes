@@ -4,14 +4,21 @@ target: test_iclamp.py
 engine: PyNEURON
 mep: .test.l23.mep
 experiments:
-  Current clamp:
+  0.6:
     observables:
       spike times:
         file: 
           path: voltage.dat
           columns: [0,8]
-          scaling: [1, 1]
         spike detection: 
           method: threshold
-          threshold: 0
+        tolerance: 0
+  0.7:
+    observables:
+      spike times:
+        file: 
+          path: voltage.dat
+          columns: [0,9]
+        spike detection: 
+          method: threshold
         tolerance: 0
