@@ -1,8 +1,6 @@
-
 import sys
 import pickle
 import time
-
 
 import numpy as np
 
@@ -11,18 +9,20 @@ sys.path.append("..")
 import libcell as lb
 import saveClass as sc
 
+from neuron import h
+
 from main import SIM_currentSteps
 
 import os
 os.chdir("..")
 
-def run_iclamp(iRange, run, nogui):
+def run_iclamp(iRange, run, nogui, vFileName):
 
     # Data saving object
     data = sc.emptyObject()
 
     # Simulation general parameters
-    data.dt = 0.1
+    data.dt = 0.025
     lb.h.dt = data.dt
     lb.h.steps_per_ms = 1.0/lb.h.dt
     data.st_onset = 200.0
@@ -56,8 +56,8 @@ def run_iclamp(iRange, run, nogui):
                                  dendNa=data.ACTIVEdendNa, dendCa=data.ACTIVEdendCa) 
     if data.ACTIVEhotSpot: lb.hotSpot(model)
 
-    data.iclampLoc = ['dend', 0.5, 28]
-    #data.iclampLoc = ['soma', 0.5]
+    #data.iclampLoc = ['dend', 0.5, 28]
+    data.iclampLoc = ['soma', 0.5]
     data.iclampOnset = 50
     data.iclampDur = 250
     data.iclampAmp = 0
@@ -83,6 +83,8 @@ def run_iclamp(iRange, run, nogui):
         for k in sorted(data.__dict__.keys()):
             print("    %s:\t\t%s"%(k, data.__dict__[k]))
         SIM_currentSteps(data, model, data.iRange, data.BGROUND)
+        
+        h('forall {print "--------------- ", secname() \n psection() } ')
 
         modelData = sc.emptyObject()
         lb.props(modelData)
@@ -99,12 +101,11 @@ def run_iclamp(iRange, run, nogui):
 
         times = data.taxis
 
-        vFileName = './test/voltage.dat'
         vFile = open(vFileName, "w")
         for i in range(len(times)):
-            vFile.write('%s'%times[i])
+            vFile.write('%s'%(times[i]/1000.0))
             for vd in data.vdata:
-                vFile.write('\t%s'%vd[i])
+                vFile.write('\t%s'%(vd[i]/1000.0))
             vFile.write('\n')
 
 
@@ -128,6 +129,11 @@ def run_iclamp(iRange, run, nogui):
     
 if __name__ == "__main__":
     
+    vFileName = './test/voltage.dat'
     nogui = '-nogui' in sys.argv
     iRange = np.arange(-0.1,0.8,0.1)
-    run_iclamp(iRange, True, nogui)
+    if '-one' in sys.argv:
+        iRange = np.array([0.7])
+        vFileName = './test/voltage.one.dat'
+        
+    run_iclamp(iRange, True, nogui, vFileName)

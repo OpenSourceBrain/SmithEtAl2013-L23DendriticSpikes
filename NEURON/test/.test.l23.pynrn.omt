@@ -10,6 +10,7 @@ experiments:
         file: 
           path: voltage.dat
           columns: [0,8]
+          scaling: [1000, 1000]
         spike detection: 
           method: threshold
         tolerance: 0
@@ -19,6 +20,7 @@ experiments:
         file: 
           path: voltage.dat
           columns: [0,9]
+          scaling: [1000, 1000]
         spike detection: 
           method: threshold
         tolerance: 0

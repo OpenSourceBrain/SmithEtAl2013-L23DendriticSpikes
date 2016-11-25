@@ -1,43 +1,64 @@
-
+import sys
 import opencortex.build as oc
 import numpy as np
 
-nml_doc, network = oc.generate_network("L23_IV")
+def generate(cell_id, duration, reference, iRange):
 
-oc.include_neuroml2_cell_and_channels(nml_doc,'L23_NoHotSpot.cell.nml','L23_NoHotSpot')
+    cell_file = '%s.cell.nml'%cell_id
 
+    #cell_id = 'Cell0'
+    #cell_file = 'L23_morph.cell.nml'
 
-iRange = np.arange(-0.1,0.8,0.1)
+    nml_doc, network = oc.generate_network(reference, temperature='35degC')
 
-population_size = len(iRange)
-
-pop = oc.add_population_in_rectangular_region(network,
-                                              'L23_pop',
-                                              'L23_NoHotSpot',
-                                              population_size,
-                                              0,0,0,
-                                              1000,100,1000)
-for i in range(iRange.size):
-    stim_id = ("Stim_%i"%i)
-    pg = oc.add_pulse_generator(nml_doc,
-                           id=stim_id,
-                           delay="50ms",
-                           duration="250ms",
-                           amplitude="%fnA"%iRange[i])
-
-    oc.add_inputs_to_population(network,
-                                stim_id,
-                                pop,
-                                pg.id,
-                                all_cells=False,
-                                only_cells=[i])
-
-nml_file_name = '%s.net.nml'%network.id
-oc.save_network(nml_doc, nml_file_name, validate=True)
+    oc.include_neuroml2_cell_and_channels(nml_doc,cell_file,cell_id)
 
 
-oc.generate_lems_simulation(nml_doc, 
-                            network, 
-                            nml_file_name, 
-                            duration =      350, 
-                            dt =            0.1)
+
+    population_size = len(iRange)
+
+    pop = oc.add_population_in_rectangular_region(network,
+                                                  'L23_pop',
+                                                  cell_id,
+                                                  population_size,
+                                                  0,0,0,
+                                                  1000,100,1000)
+    for i in range(iRange.size):
+        stim_id = ("Stim_%i"%i)
+        pg = oc.add_pulse_generator(nml_doc,
+                               id=stim_id,
+                               delay="50ms",
+                               duration="250ms",
+                               amplitude="%fnA"%iRange[i])
+
+        oc.add_inputs_to_population(network,
+                                    stim_id,
+                                    pop,
+                                    pg.id,
+                                    all_cells=False,
+                                    only_cells=[i])
+
+    nml_file_name = '%s.net.nml'%network.id
+    oc.save_network(nml_doc, nml_file_name, validate=True)
+
+
+    oc.generate_lems_simulation(nml_doc, 
+                                network, 
+                                nml_file_name, 
+                                duration, 
+                                dt = 0.025)
+
+    
+if __name__ == "__main__":
+    
+    cell_id = 'L23_NoHotSpot'
+    reference = "L23_IV"
+    duration = 350
+    iRange = np.arange(-0.1,0.8,0.1)
+    
+    if '-one' in sys.argv:
+        iRange = np.array([0.7])
+        reference = "L23_One"
+        duration = 350
+        
+    generate(cell_id, duration, reference, iRange)

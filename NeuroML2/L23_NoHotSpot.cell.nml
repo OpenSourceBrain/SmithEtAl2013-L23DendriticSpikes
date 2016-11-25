@@ -16464,6 +16464,8 @@
         <channelDensity ionChannel="ca" id="ca_all" condDensity = "5e-5 S_per_cm2" ion="ca" erev="127.57323 mV"/>
         
         <specificCapacitance  value="1 uF_per_cm2" />
+                
+        <initMembPotential value="-75.0 mV"/>
 
       </membraneProperties> 
 
