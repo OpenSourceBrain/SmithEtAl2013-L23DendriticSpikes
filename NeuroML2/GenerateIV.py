@@ -57,7 +57,7 @@ if __name__ == "__main__":
     iRange = np.arange(-0.1,0.8,0.1)
     
     if '-one' in sys.argv:
-        iRange = np.array([0.7])
+        iRange = np.array([0.5])
         reference = "L23_One"
         duration = 400
         

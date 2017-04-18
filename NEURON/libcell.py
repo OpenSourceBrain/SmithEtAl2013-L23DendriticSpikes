@@ -31,7 +31,7 @@ class L23(object):
         self._biophys()
 
     def _geom(self):
-        self.axon = h.Section()
+        self.axon = h.Section(name='axon')
         self.axon.L = 300
         self.axon.diam = 1
 
@@ -203,6 +203,8 @@ def simulate(model, t_stop=100, NMDA=False, recDend=False, recSec=False):
     gNMDA_rec, iNMDA_rec = [], []
     trec.record(h._ref_t)
     vrec.record(model.soma(0.5)._ref_v)
+    
+    print("Running a simulation with duration %sms (dt: %sms)"%(t_stop,h.dt))
 
     if NMDA:        
         for n in np.arange(0, len(model.NMDAlist)):

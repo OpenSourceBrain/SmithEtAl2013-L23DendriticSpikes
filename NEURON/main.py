@@ -118,6 +118,11 @@ def sim_oneRandomInput(data, model, Ensyn, Insyn, Erate, Irate, bGround=False):
 def SIM_rateIteration(data, model, rRange, bGround):
     for rate in rRange:
         print 'Running E rate', rate
+        
+        print("Running rateIteration simulation with parameters:")
+        for k in sorted(data.__dict__.keys()):
+            print("    %s:\t\t%s"%(k, data.__dict__[k]))
+            
         data.taxis, v, vD, r, g, i, ca, vsec = sim_oneRandomInput(data, model, data.Ensyn, data.Insyn, Erate=rate, Irate=rate, bGround=bGround)
         storeSimOutput(data, v,vD,i,g,r,ca,vsec)        
    
@@ -131,6 +136,9 @@ def SIM_currentSteps(data, model, iRange, bGround=False):
                                  [0,0])
         fih = lb.h.FInitializeHandler(1, initSpikes)
     for step in iRange:
+        print("Running current step simulation with parameters:")
+        for k in sorted(data.__dict__.keys()):
+            print("    %s:\t\t%s"%(k, data.__dict__[k]))
         model.stim.amp = step
         taxis, v, vD, g, i, ca, vsec = lb.simulate(model, t_stop=data.TSTOP,
                                          NMDA=data.NMDA, recDend=data.recordDend)

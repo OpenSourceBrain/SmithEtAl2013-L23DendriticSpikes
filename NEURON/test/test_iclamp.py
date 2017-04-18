@@ -136,7 +136,7 @@ if __name__ == "__main__":
     nogui = '-nogui' in sys.argv
     iRange = np.arange(-0.1,0.8,0.1)
     if '-one' in sys.argv:
-        iRange = np.array([0.7])
+        iRange = np.array([0.5])
         vFileName = './test/voltage.one.dat'
         
     model = run_iclamp(iRange, True, nogui, vFileName)
