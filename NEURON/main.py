@@ -9,7 +9,34 @@ import numpy as np
 import pickle
 import time
 
-import brian as br
+################################################################################ 
+#     Removing dependency on Brian 1 as the class used, OfflinePoissonGroup is not compatible
+#     with recent versions of Numpy. Using slightly modified OfflinePoissonGroup here.
+#     See https://github.com/OpenSourceBrain/SmithEtAl2013-L23DendriticSpikes/issues/3
+#
+######import brian as br
+
+from numpy.random import exponential, randint
+from numpy import ones, cumsum, sum, isscalar
+
+## Copied from https://github.com/brian-team/brian/blob/master/brian/directcontrol.py#L450
+#  and changed: T * totalrate * 2  -> int(T * totalrate * 2)
+class OfflinePoissonGroup(object): # This is weird, there is only an init method
+    def __init__(self, N, rates, T):
+        """
+        Generates a Poisson group with N spike trains and given rates over the
+        time window [0,T].
+        """
+        if isscalar(rates):
+            rates = rates * ones(N)
+        totalrate = sum(rates)
+        isi = exponential(1 / totalrate, int(T * totalrate * 2))
+        spikes = cumsum(isi)
+        spikes = spikes[spikes <= T]
+        neurons = randint(0, N, len(spikes))
+        self.spiketimes = zip(neurons, spikes)
+      
+################################################################################   
 
 import libcell as lb
 import saveClass as sc
@@ -49,7 +76,7 @@ def genRandomLocs(data, model, nsyn):
 def genPoissonInput(nsyn, rate, duration, onset):
     times = np.array([])
     while times.shape[0]<2:
-        P =  br.OfflinePoissonGroup(nsyn, rate, duration * br.ms)
+        P =  OfflinePoissonGroup(nsyn, rate, duration)
         times = np.array(P.spiketimes)    
     times[:,1] = times[:,1] * 1000 + onset
     rates = 1./np.diff(np.array(P.spiketimes)[:,1]).mean()
@@ -63,7 +90,7 @@ def genRandomFixedInput(nsyn, tInterval, onset):
     return times
 
 def addBground(data, nsyn, Snsyn, rate, sTimes):
-    P =  br.OfflinePoissonGroup(nsyn, rate, data.TSTOP * br.ms)
+    P =  OfflinePoissonGroup(nsyn, rate, data.TSTOP)
     bTimes = np.array(P.spiketimes)
     bTimes[:,0] = bTimes[:,0] + Snsyn
     bTimes[:,1] = bTimes[:,1] * 1000
