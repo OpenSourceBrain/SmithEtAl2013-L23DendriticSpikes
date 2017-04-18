@@ -103,7 +103,7 @@ inputs.append(stim)
 
 
 
-varlist = ['v']#, 'ica', 'cai']
+varlist = ['v', 'ica', 'cai', 'ina', 'ik']
 ds = create_dumps(comp, varlist)
 
 run(600, 0.001)

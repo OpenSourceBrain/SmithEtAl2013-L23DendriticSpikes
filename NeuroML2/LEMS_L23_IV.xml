@@ -2,7 +2,7 @@
     
     <!-- 
 
-        This LEMS file has been automatically generated using PyNeuroML v0.2.2 (libNeuroML v0.2.23)
+        This LEMS file has been automatically generated using PyNeuroML v0.2.10 (libNeuroML v0.2.29)
 
      -->
     
@@ -24,9 +24,9 @@
     <Include file="pas.channel.nml"/>
     <Include file="L23_IV.net.nml"/>
    
-    <Simulation id="Sim_L23_IV" length="350ms" step="0.025ms" target="L23_IV" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_L23_IV" length="400ms" step="0.025ms" target="L23_IV" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
-        <Display id="DispPop__L23_pop" title="Membrane potentials of cells in L23_pop" timeScale="1ms" xmin="-35.0" xmax="385.0" ymin="-90" ymax="50">
+        <Display id="DispPop__L23_pop" title="Membrane potentials of cells in L23_pop" timeScale="1ms" xmin="-40.0" xmax="440.0" ymin="-90" ymax="50">
             <Line id="L23_pop[0]: v" quantity="L23_pop/0/L23_NoHotSpot/v" scale="1mV" color="#6aa799" timeScale="1ms"/>
             <Line id="L23_pop[1]: v" quantity="L23_pop/1/L23_NoHotSpot/v" scale="1mV" color="#029a72" timeScale="1ms"/>
             <Line id="L23_pop[2]: v" quantity="L23_pop/2/L23_NoHotSpot/v" scale="1mV" color="#d340bb" timeScale="1ms"/>

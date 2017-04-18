@@ -70,6 +70,10 @@ def run_iclamp(iRange, run, nogui, vFileName):
             lb.add_dendStim(model, data.iclampLoc[1], data.iclampLoc[2],
                      onset=data.iclampOnset, dur=data.iclampDur, amp=data.iclampAmp)
 
+    h('count=0')
+    h('forall {print "--------------- ", secname() \n count=count+1 } ')
+    h('print "Number of sections: ", count')
+    
     if run:
         data.vdata, data.vDdata, data.gdata, data.idata, data.caDdata, data.vsec = [], [], [], [], [], []
         data.rates = []
@@ -83,8 +87,6 @@ def run_iclamp(iRange, run, nogui, vFileName):
         for k in sorted(data.__dict__.keys()):
             print("    %s:\t\t%s"%(k, data.__dict__[k]))
         SIM_currentSteps(data, model, data.iRange, data.BGROUND)
-        
-        h('forall {print "--------------- ", secname() \n psection() } ')
 
         modelData = sc.emptyObject()
         lb.props(modelData)
@@ -125,6 +127,7 @@ def run_iclamp(iRange, run, nogui, vFileName):
 
         print("Done!")
 
+    return model
     
     
 if __name__ == "__main__":
@@ -136,4 +139,4 @@ if __name__ == "__main__":
         iRange = np.array([0.7])
         vFileName = './test/voltage.one.dat'
         
-    run_iclamp(iRange, True, nogui, vFileName)
+    model = run_iclamp(iRange, True, nogui, vFileName)

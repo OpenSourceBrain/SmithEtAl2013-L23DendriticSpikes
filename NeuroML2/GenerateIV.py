@@ -53,12 +53,12 @@ if __name__ == "__main__":
     
     cell_id = 'L23_NoHotSpot'
     reference = "L23_IV"
-    duration = 350
+    duration = 400
     iRange = np.arange(-0.1,0.8,0.1)
     
     if '-one' in sys.argv:
         iRange = np.array([0.7])
         reference = "L23_One"
-        duration = 350
+        duration = 400
         
     generate(cell_id, duration, reference, iRange)

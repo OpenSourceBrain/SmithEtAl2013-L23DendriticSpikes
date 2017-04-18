@@ -31,3 +31,6 @@ generatedNeuroML2
 /NeuroML2/L23_NoHotSpot.cell.svg
 /NeuroML2/L23_IV.net.svg
 /NeuroML2/L23_morph.cell.svg
+/NEURON/temp.*
+/NeuroML2/*cell.png
+/NeuroML2/*old

@@ -1,10 +1,20 @@
 
+nrnpython("from neuron import h")
 nrnpython("import os")
-nrnpython("print os.getcwd()")
+nrnpython("print('Current dir: '+os.getcwd())")
 nrnpython("from test_iclamp import run_iclamp")
 
-nrnpython("run_iclamp([0], False, True)")
+celsius = 35
+
+nrnpython("mymodel = run_iclamp([0], True, True, None)")
+
+define_shape()
+
+count2=0
+forall {print "--------------- ", secname()} 
+forall { count2=count2+1 } 
+print "-- Number of sections: ", count2
 
 load_file("test/cellCheck.hoc")
 
-psection()
+cellInfo()
