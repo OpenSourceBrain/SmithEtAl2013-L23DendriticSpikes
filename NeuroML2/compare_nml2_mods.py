@@ -1,8 +1,11 @@
 import matplotlib.pyplot as pylab
 import os.path
 
-chans = ['ca', 'it', 'na', 'kv', 'km']
 chans = ['na']
+chans = ['kv']
+chans = ['km']
+chans = ['it']
+chans = ['ca', 'it', 'na', 'kv', 'km']
 gates = ['m', 'h', 'n']
 
 temperatures = [26]
