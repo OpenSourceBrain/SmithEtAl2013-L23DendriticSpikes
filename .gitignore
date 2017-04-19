@@ -34,3 +34,10 @@ generatedNeuroML2
 /NEURON/temp.*
 /NeuroML2/*cell.png
 /NeuroML2/*old
+/NeuroML2/notebooks/.ipynb_checkpoints
+/NeuroML2/notebooks/*.mod
+/NeuroML2/notebooks/*.dat
+/NeuroML2/notebooks/*_nrn.py
+/NeuroML2/notebooks/*.hoc
+/NeuroML2/notebooks/LEMS_iv_L23_NoHotSpot.xml
+/NeuroML2/notebooks/iv_L23_NoHotSpot.net.nml
