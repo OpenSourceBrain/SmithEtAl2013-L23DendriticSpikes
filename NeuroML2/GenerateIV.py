@@ -1,5 +1,5 @@
 import sys
-import opencortex.build as oc
+import opencortex.core as oc
 import numpy as np
 
 def generate(cell_id, duration, reference, iRange):

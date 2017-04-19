@@ -1,0 +1,49 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.2.10 (libNeuroML v0.2.29)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="Sim_L23_Stim"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="L23_NoHotSpot.cell.nml"/>
+    <Include file="ca.channel.nml"/>
+    <Include file="it.channel.nml"/>
+    <Include file="kca.channel.nml"/>
+    <Include file="km.channel.nml"/>
+    <Include file="kv.channel.nml"/>
+    <Include file="na.channel.nml"/>
+    <Include file="pas.channel.nml"/>
+    <Include file="L23_Stim.net.nml"/>
+   
+    <Simulation id="Sim_L23_Stim" length="200ms" step="0.025ms" target="L23_Stim" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <Display id="Some_voltages" title="Plots of Some_voltages" timeScale="1ms" xmin="-20.0" xmax="220.0" ymin="-90" ymax="50">
+            <Line id="L23_pop_0_L23_NoHotSpot_0_v" quantity="L23_pop/0/L23_NoHotSpot/0/v" scale="1" color="#6aa799" timeScale="1ms"/>
+            <Line id="L23_pop_0_L23_NoHotSpot_200_v" quantity="L23_pop/0/L23_NoHotSpot/200/v" scale="1" color="#029a72" timeScale="1ms"/>
+            <Line id="L23_pop_0_L23_NoHotSpot_1000_v" quantity="L23_pop/0/L23_NoHotSpot/1000/v" scale="1" color="#d340bb" timeScale="1ms"/>
+            <Line id="L23_pop_0_L23_NoHotSpot_2000_v" quantity="L23_pop/0/L23_NoHotSpot/2000/v" scale="1" color="#4c73a9" timeScale="1ms"/>
+            <Line id="L23_pop_0_L23_NoHotSpot_2500_v" quantity="L23_pop/0/L23_NoHotSpot/2500/v" scale="1" color="#5e503a" timeScale="1ms"/>
+            <Line id="L23_pop_0_L23_NoHotSpot_2949_v" quantity="L23_pop/0/L23_NoHotSpot/2949/v" scale="1" color="#3193ca" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="L23_NoHotSpot_voltages_dat" fileName="L23_NoHotSpot_voltages.dat">
+            <OutputColumn id="L23_pop_0_L23_NoHotSpot_0_v" quantity="L23_pop/0/L23_NoHotSpot/0/v"/> 
+            <OutputColumn id="L23_pop_0_L23_NoHotSpot_200_v" quantity="L23_pop/0/L23_NoHotSpot/200/v"/> 
+            <OutputColumn id="L23_pop_0_L23_NoHotSpot_1000_v" quantity="L23_pop/0/L23_NoHotSpot/1000/v"/> 
+            <OutputColumn id="L23_pop_0_L23_NoHotSpot_2000_v" quantity="L23_pop/0/L23_NoHotSpot/2000/v"/> 
+            <OutputColumn id="L23_pop_0_L23_NoHotSpot_2500_v" quantity="L23_pop/0/L23_NoHotSpot/2500/v"/> 
+            <OutputColumn id="L23_pop_0_L23_NoHotSpot_2949_v" quantity="L23_pop/0/L23_NoHotSpot/2949/v"/> 
+        </OutputFile>
+        
+    </Simulation>
+
+</Lems>
