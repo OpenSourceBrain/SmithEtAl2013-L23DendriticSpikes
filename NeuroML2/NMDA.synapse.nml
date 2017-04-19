@@ -9,7 +9,7 @@
     <blockingPlasticSynapse id="NMDA" gbase="0.485nS"
                             erev="0mV" tauRise="2ms" tauDecay="20ms">
         <notes>NMDA synapse</notes>
-        <voltageConcDepBlockMechanism id="block" species="mg" blockConcentration="1 mM"
+        <blockMechanism type="voltageConcDepBlockMechanism" species="mg" blockConcentration="1 mM"
                                       scalingConc="3.57 mM" scalingVolt="16.129 mV"/>
     </blockingPlasticSynapse>
 

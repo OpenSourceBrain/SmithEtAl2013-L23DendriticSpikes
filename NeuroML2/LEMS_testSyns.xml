@@ -14,7 +14,7 @@
   
   <Component type="Simulation" id="sim1" length="400ms" step="0.01 ms" target="net">
 
-    <Display id="" title="v"  xmin="0" xmax="400" ymin="-75.0" ymax="-50" timeScale="1ms">
+    <Display id="" title="v"  xmin="0" xmax="400" ymin="-75.0" ymax="-10" timeScale="1ms">
       <Line id="V0" timeScale="1ms" quantity="pop/0/cell/v" scale="1 mV" color="#000000"/>
       <Line id="V1" timeScale="1ms" quantity="pop/1/cell/v" scale="1 mV" color="#ff0000"/>
       <Line id="V2" timeScale="1ms" quantity="pop/2/cell/v" scale="1 mV" color="#00ff00"/>
