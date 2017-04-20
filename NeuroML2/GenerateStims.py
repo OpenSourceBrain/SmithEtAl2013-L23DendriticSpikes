@@ -4,8 +4,17 @@ import opencortex.core as oc
 
 import numpy as np
 
-def generate(cell_id, duration, reference, bEnsyn):
+def generate(cell_id, duration, reference, 
+             Ensyn, 
+             bEnsyn,
+             Erate = 8,
+             Irate = 8,
+             st_onset = 200.0,
+             st_duration = 200.,
+             EbGroundRate = 2,
+             IbGroundRate = 2):
 
+    Insyn = int(Ensyn * 0.2)
     bInsyn = int(bEnsyn * 0.2)
     
     cell_file = '%s.cell.nml'%cell_id
@@ -18,20 +27,41 @@ def generate(cell_id, duration, reference, bEnsyn):
     oc.include_neuroml2_file(nml_doc,'GABA.synapse.nml')
     oc.include_neuroml2_file(nml_doc,'NMDA.synapse.nml')
 
-    ampa1 = oc.add_poisson_firing_synapse(nml_doc,
+    ampa1 = oc.add_transient_poisson_firing_synapse(nml_doc,
                                        id="ampa1",
-                                       average_rate="50 Hz",
+                                       average_rate="%s Hz"%Erate,
+                                       synapse_id='AMPA',
+                                       delay='%s ms'%st_onset,
+                                       duration='%s ms'%st_duration)
+
+    nmda1 = oc.add_transient_poisson_firing_synapse(nml_doc,
+                                       id="nmda1",
+                                       average_rate="%s Hz"%Erate,
+                                       synapse_id='NMDA',
+                                       delay='%s ms'%st_onset,
+                                       duration='%s ms'%st_duration)
+                                       
+    gaba1 = oc.add_transient_poisson_firing_synapse(nml_doc,
+                                       id="gaba1",
+                                       average_rate="%s Hz"%Irate,
+                                       synapse_id='GABA',
+                                       delay='%s ms'%st_onset,
+                                       duration='%s ms'%st_duration)
+
+    ampa_b = oc.add_poisson_firing_synapse(nml_doc,
+                                       id="ampa_b",
+                                       average_rate="%s Hz"%EbGroundRate,
                                        synapse_id='AMPA')
 
-    gaba1 = oc.add_poisson_firing_synapse(nml_doc,
-                                       id="gaba1",
-                                       average_rate="50 Hz",
-                                       synapse_id='GABA')
-
-    nmda1 = oc.add_poisson_firing_synapse(nml_doc,
-                                       id="nmda1",
-                                       average_rate="50 Hz",
+    nmda_b = oc.add_poisson_firing_synapse(nml_doc,
+                                       id="nmda_b",
+                                       average_rate="%s Hz"%EbGroundRate,
                                        synapse_id='NMDA')
+                                       
+    gaba_b = oc.add_poisson_firing_synapse(nml_doc,
+                                       id="gaba_b",
+                                       average_rate="%s Hz"%IbGroundRate,
+                                       synapse_id='GABA')
 
 
     pop = oc.add_single_cell_population(network,
@@ -41,20 +71,40 @@ def generate(cell_id, duration, reference, bEnsyn):
     
     
             
-    oc.add_targeted_inputs_to_population(network, "bEsyn_a",
+    oc.add_targeted_inputs_to_population(network, "Esyn_a",
                                 pop, ampa1.id, 
                                 segment_group='dendrite_group',
-                                number_per_cell = bEnsyn,
+                                number_per_cell = Ensyn,
                                 all_cells=True)
             
-    oc.add_targeted_inputs_to_population(network, "bEsyn_n",
+    oc.add_targeted_inputs_to_population(network, "Esyn_n",
                                 pop, nmda1.id, 
+                                segment_group='dendrite_group',
+                                number_per_cell = Ensyn,
+                                all_cells=True)
+            
+    oc.add_targeted_inputs_to_population(network, "Isyn",
+                                pop, gaba1.id, 
+                                segment_group='dendrite_group',
+                                number_per_cell = Insyn,
+                                all_cells=True)
+                                
+    
+            
+    oc.add_targeted_inputs_to_population(network, "Ebsyn_a",
+                                pop, ampa_b.id, 
                                 segment_group='dendrite_group',
                                 number_per_cell = bEnsyn,
                                 all_cells=True)
             
-    oc.add_targeted_inputs_to_population(network, "bIsyn",
-                                pop, gaba1.id, 
+    oc.add_targeted_inputs_to_population(network, "Ebsyn_n",
+                                pop, nmda_b.id, 
+                                segment_group='dendrite_group',
+                                number_per_cell = bEnsyn,
+                                all_cells=True)
+            
+    oc.add_targeted_inputs_to_population(network, "Ibsyn",
+                                pop, gaba_b.id, 
                                 segment_group='dendrite_group',
                                 number_per_cell = bInsyn,
                                 all_cells=True)
@@ -89,6 +139,6 @@ if __name__ == "__main__":
     
     cell_id = 'L23_NoHotSpot'
     reference = "L23_Stim"
-    duration = 200
+    duration = 550
         
-    generate(cell_id, duration, reference, 100)
+    generate(cell_id, duration, reference, Ensyn=200, bEnsyn=500)
