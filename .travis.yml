@@ -1,15 +1,18 @@
 # Framework for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
 
-sudo: false
+dist: trusty
+sudo: false  
 
 addons:
   apt:
     packages:
-       # Requirements for Brian
+    - python-matplotlib 
+    - python-tk
     - python-numpy 
     - python-scipy 
-    - python-matplotlib 
-    - python-sympy
+    - python-lxml
+    - libhdf5-7
+    - python-tables
 
 language: python
 python: 2.7
@@ -21,13 +24,12 @@ env:
     - OMV_ENGINE=PyNEURON
     - OMV_ENGINE=jNeuroML
     - OMV_ENGINE=jNeuroML_NEURON
+    - OMV_ENGINE=jNeuroML_NetPyNE
     - OMV_ENGINE=jNeuroML_validate
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
     
-    # Brian required by PyNEURON script also...
-    - omv install Brian
     # Need to pre install NEURON so nrnivmodl can be run targeting mod files in a different directory
     - omv install NEURON
     - cd NEURON/test
