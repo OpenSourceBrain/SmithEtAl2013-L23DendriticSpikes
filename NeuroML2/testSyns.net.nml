@@ -6,6 +6,7 @@
     <include href="AMPA.synapse.nml"/>
     <include href="GABA.synapse.nml"/>
     <include href="NMDA.synapse.nml"/>
+    <include href="AMPA_NMDA.synapse.nml"/>
 
     <pulseGenerator id="iclamp0" delay="100 ms" duration="10 ms" amplitude="0.2 nA"/>
     <pulseGenerator id="iclamp1" delay="300 ms" duration="10 ms" amplitude="0.2 nA"/>
@@ -14,7 +15,7 @@
 
     <network id="net" type="networkWithTemperature" temperature="35 degC">
 
-        <population id="pop" component="cell" type="populationList" size="4">
+        <population id="pop0" component="cell" type="populationList" size="4">
             <instance id="0">
                 <location x="0" y="0" z="0"/>
             </instance>
@@ -27,31 +28,39 @@
             <instance id="3">
                 <location x="30" y="0" z="0"/>
             </instance>
+            <instance id="4">
+                <location x="40" y="0" z="0"/>
+            </instance>
         </population>
     
-        <projection id="ampa" presynapticPopulation="pop" postsynapticPopulation="pop" synapse="AMPA">
-            <connection id="0" preCellId="../pop/0/cell" postCellId="../pop/1/cell"/>
+        <projection id="ampa" presynapticPopulation="pop0" postsynapticPopulation="pop0" synapse="AMPA">
+            <connection id="0" preCellId="../pop0/0/cell" postCellId="../pop0/1/cell"/>
         </projection>
     
-        <projection id="gaba" presynapticPopulation="pop" postsynapticPopulation="pop" synapse="GABA">
-            <connection id="0" preCellId="../pop/0/cell" postCellId="../pop/2/cell"/>
+        <projection id="gaba" presynapticPopulation="pop0" postsynapticPopulation="pop0" synapse="GABA">
+            <connection id="0" preCellId="../pop0/0/cell" postCellId="../pop0/2/cell"/>
         </projection>
     
-        <projection id="nmda" presynapticPopulation="pop" postsynapticPopulation="pop" synapse="NMDA">
-            <connection id="0" preCellId="../pop/0/cell" postCellId="../pop/3/cell"/>
+        <projection id="nmda" presynapticPopulation="pop0" postsynapticPopulation="pop0" synapse="NMDA">
+            <connection id="0" preCellId="../pop0/0/cell" postCellId="../pop0/3/cell"/>
+        </projection>
+    
+        <projection id="ampa_nmda" presynapticPopulation="pop0" postsynapticPopulation="pop0" synapse="AMPA_NMDA">
+            <connection id="0" preCellId="../pop0/0/cell" postCellId="../pop0/4/cell"/>
         </projection>
 
-        <inputList id="iclamp0" component="iclamp0" population="pop">
-            <input id="0" target="../pop/0/cell" destination="synapses"/>
+        <inputList id="iclamp0" component="iclamp0" population="pop0">
+            <input id="0" target="../pop0/0/cell" destination="synapses"/>
         </inputList>
-        <inputList id="iclamp1" component="iclamp1" population="pop">
-            <input id="0" target="../pop/0/cell" destination="synapses"/>
+        <inputList id="iclamp1" component="iclamp1" population="pop0">
+            <input id="0" target="../pop0/0/cell" destination="synapses"/>
         </inputList>
         
-        <inputList id="iclamp2" component="iclamp2" population="pop">
-            <input id="0" target="../pop/1/cell" destination="synapses"/>
-            <input id="1" target="../pop/2/cell" destination="synapses"/>
-            <input id="2" target="../pop/3/cell" destination="synapses"/>
+        <inputList id="iclamp2" component="iclamp2" population="pop0">
+            <input id="0" target="../pop0/1/cell" destination="synapses"/>
+            <input id="1" target="../pop0/2/cell" destination="synapses"/>
+            <input id="2" target="../pop0/3/cell" destination="synapses"/>
+            <input id="3" target="../pop0/4/cell" destination="synapses"/>
         </inputList>
 
     </network>

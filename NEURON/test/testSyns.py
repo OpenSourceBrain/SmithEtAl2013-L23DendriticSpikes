@@ -20,30 +20,6 @@ def create_comp(name='soma'):
     h('L = 9.26604')
     h('diam = 29.7838')
 
-    '''
-    comp.insert('na')
-    comp.gbar_na = 1000.0
-    comp.ena = 60
-
-    comp.insert('km')
-    comp.gbar_km = 2.2
-    comp.ek = -90
-
-    comp.insert('kv')
-    comp.gbar_kv = 100.0
-    comp.ek = -90
-
-    comp.insert('ca')
-    comp.gbar_ca = 0.5
-    comp.eca = 140.0
-
-    comp.insert('kca')
-    comp.gbar_kca = 3.0
-    comp.ek = -90
-
-    comp.insert('it')
-    comp.gbar_it = 0.0003
-    comp.eca = 140.0'''
 
     h('insert pas')
     h('g_pas = 0.000142857142857')
@@ -148,12 +124,42 @@ def add_NMDAsyns(gmax=0.5, tau1=2, tau2=20):
     h('psection()')
     
     return h.nmda
+        
+        
+def add_AMPA_NMDAsyns(gmaxa=0.5, tau1a=0.5, tau2a=1, gmaxn=0.5, tau1n=2, tau2n=20):
+
+    print "Adding syn..."
+    print h.secname()
+    gmaxa = gmaxa/1000.   # Set in nS and convert to muS
+   
+    h('psection()')
+    h('objref ampa2')
+    h('objref nc_ampa2')
+    h('soma4 ampa2 = new Exp2Syn(0.5)')
+    h('ampa2.tau1 = %s'%tau1a)
+    h('ampa2.tau2 = %s'%tau2a)
+    h('soma0 nc_ampa2 = new NetCon(&v(0.5), ampa2, 0.0, 0.0, %s)'%gmaxa)
+
+    gmaxn = gmaxn/1000.   # Set in nS and convert to muS
+   
+    h('psection()')
+    h('objref nmda2')
+    h('objref nc_nmda2')
+    h('soma4 nmda2 = new Exp2SynNMDA(0.5)')
+    h('nmda2.tau1 = %s'%tau1n)
+    h('nmda2.tau2 = %s'%tau2n)
+    h('soma0 nc_nmda2 = new NetCon(&v(0.5), nmda2, 0.0, 0.0, %s)'%gmaxn)
+    
+    h('psection()')
+    
+    return h.ampa2, h.nmda2
 
 
 comp0 = create_comp('soma0')
 comp1 = create_comp('soma1')
 comp2 = create_comp('soma2')
 comp3 = create_comp('soma3')
+comp4 = create_comp('soma4')
 
 h.celsius = 35
 
@@ -189,9 +195,16 @@ stim.dur = 500
 stim.amp = 0.06
 inputs.append(stim)
 
+stim = h.IClamp(0.5, sec=comp4)
+stim.delay = 200
+stim.dur = 500
+stim.amp = 0.06
+inputs.append(stim)
+
 ampa1 = add_AMPAsyns()
 gaba1 = add_GABAsyns()
 nmda1 = add_NMDAsyns()
+ampa2, nmda2 = add_AMPA_NMDAsyns()
 
 
 h('forall psection()')
@@ -201,6 +214,7 @@ ds0 = create_dumps(comp0, varlist)
 ds1 = create_dumps(comp1, varlist)
 ds2 = create_dumps(comp2, varlist)
 ds3 = create_dumps(comp3, varlist)
+ds4 = create_dumps(comp4, varlist)
 
 run(400, 0.01)
 
@@ -210,12 +224,14 @@ if not nogui:
     plot_timeseries(ds1, varlist)
     plot_timeseries(ds2, varlist)
     plot_timeseries(ds3, varlist)
+    plot_timeseries(ds4, varlist)
     show()
     
 dump_to_file(ds0, varlist, fname='v0.dat')
 dump_to_file(ds1, varlist, fname='v1.dat')
 dump_to_file(ds2, varlist, fname='v2.dat')
 dump_to_file(ds3, varlist, fname='v3.dat')
+dump_to_file(ds4, varlist, fname='v4.dat')
 
 
 if nogui:

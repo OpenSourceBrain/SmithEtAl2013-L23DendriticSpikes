@@ -15,17 +15,19 @@
   <Component type="Simulation" id="sim1" length="400ms" step="0.01 ms" target="net">
 
     <Display id="" title="v"  xmin="0" xmax="400" ymin="-75.0" ymax="-10" timeScale="1ms">
-      <Line id="V0" timeScale="1ms" quantity="pop/0/cell/v" scale="1 mV" color="#000000"/>
-      <Line id="V1" timeScale="1ms" quantity="pop/1/cell/v" scale="1 mV" color="#ff0000"/>
-      <Line id="V2" timeScale="1ms" quantity="pop/2/cell/v" scale="1 mV" color="#00ff00"/>
-      <Line id="V3" timeScale="1ms" quantity="pop/3/cell/v" scale="1 mV" color="#0000ff"/>
+      <Line id="V0" timeScale="1ms" quantity="pop0/0/cell/v" scale="1 mV" color="#000000"/>
+      <Line id="V1" timeScale="1ms" quantity="pop0/1/cell/v" scale="1 mV" color="#ff0000"/>
+      <Line id="V2" timeScale="1ms" quantity="pop0/2/cell/v" scale="1 mV" color="#00ff00"/>
+      <Line id="V3" timeScale="1ms" quantity="pop0/3/cell/v" scale="1 mV" color="#0000ff"/>
+      <Line id="V4" timeScale="1ms" quantity="pop0/4/cell/v" scale="1 mV" color="#00ffff"/>
     </Display>
 
     <OutputFile id="outf" fileName="testSyns.dat">
-      <OutputColumn id="v0" quantity="pop/0/cell/v"/>
-      <OutputColumn id="v1" quantity="pop/1/cell/v"/>
-      <OutputColumn id="v2" quantity="pop/2/cell/v"/>
-      <OutputColumn id="v3" quantity="pop/3/cell/v"/>
+      <OutputColumn id="v0" quantity="pop0/0/cell/v"/>
+      <OutputColumn id="v1" quantity="pop0/1/cell/v"/>
+      <OutputColumn id="v2" quantity="pop0/2/cell/v"/>
+      <OutputColumn id="v3" quantity="pop0/3/cell/v"/>
+      <OutputColumn id="v4" quantity="pop0/4/cell/v"/>
     </OutputFile>
     
   </Component>

@@ -24,19 +24,19 @@
   <Component type="Simulation" id="sim1" length="600ms" step="0.001 ms" target="net">
 
     <Display id="" title="v"  xmin="0" xmax="600" ymin="-100.0" ymax="100" timeScale="1ms">
-      <Line id="VOLTAGE" timeScale="1ms" quantity="pop/0/cell/v" scale="1 mV" color="#000000"/>
+      <Line id="VOLTAGE" timeScale="1ms" quantity="pop0/0/cell/v" scale="1 mV" color="#000000"/>
     </Display>
     <Display id="d2" title="Ca current density (uA_per_cm2)" timeScale="1ms" xmin="0" xmax="600" ymin="0" ymax="3">
-      <Line id="Ca iDensity" quantity="pop/0/cell/biophys/membraneProperties/ca_all/iDensity" scale="1uA_per_cm2"  color="#00ff00" timeScale="1ms"/>
+      <Line id="Ca iDensity" quantity="pop0/0/cell/biophys/membraneProperties/ca_all/iDensity" scale="1uA_per_cm2"  color="#00ff00" timeScale="1ms"/>
     </Display>
     <Display id="d3" title="Internal Ca concentration (mM)" timeScale="1ms" xmin="0" xmax="600" ymin="0" ymax="30">
-      <Line id="caConc" quantity="pop/0/cell/caConc" scale="1e-6 mM"  color="#ff0000" timeScale="1ms"/>
+      <Line id="caConc" quantity="pop0/0/cell/caConc" scale="1e-6 mM"  color="#ff0000" timeScale="1ms"/>
     </Display>
     <OutputFile id="outf" fileName="jlems_sccct.dat">
-      <OutputColumn id="v" quantity="pop/0/cell/v"/>
-      <OutputColumn id="ca" quantity="pop/0/cell/caConc"/>
-      <OutputColumn id="ica" quantity="pop/0/cell/biophys/membraneProperties/ca_all/iDensity"/>
-      <!-- <OutputColumn id="m_x" quantity="pop/0/cell/biophys/membraneProperties/x_all/x/m/q"/> -->
+      <OutputColumn id="v" quantity="pop0/0/cell/v"/>
+      <OutputColumn id="ca" quantity="pop0/0/cell/caConc"/>
+      <OutputColumn id="ica" quantity="pop0/0/cell/biophys/membraneProperties/ca_all/iDensity"/>
+      <!-- <OutputColumn id="m_x" quantity="pop0/0/cell/biophys/membraneProperties/x_all/x/m/q"/> -->
     </OutputFile>
   </Component>
 </Lems>
