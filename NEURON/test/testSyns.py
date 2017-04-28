@@ -201,10 +201,10 @@ stim.dur = 500
 stim.amp = 0.06
 inputs.append(stim)
 
-ampa1 = add_AMPAsyns()
-gaba1 = add_GABAsyns()
-nmda1 = add_NMDAsyns()
-ampa2, nmda2 = add_AMPA_NMDAsyns()
+ampa1 = add_AMPAsyns(gmax=1)
+gaba1 = add_GABAsyns(gmax=1,rev=-80)
+nmda1 = add_NMDAsyns(gmax=1)
+ampa2, nmda2 = add_AMPA_NMDAsyns(gmaxa=1,gmaxn=1)
 
 
 h('forall psection()')
@@ -216,7 +216,7 @@ ds2 = create_dumps(comp2, varlist)
 ds3 = create_dumps(comp3, varlist)
 ds4 = create_dumps(comp4, varlist)
 
-run(400, 0.01)
+run(400, 0.005)
 
 if not nogui:
     from pylab import show
@@ -227,11 +227,11 @@ if not nogui:
     plot_timeseries(ds4, varlist)
     show()
     
-dump_to_file(ds0, varlist, fname='v0.dat')
-dump_to_file(ds1, varlist, fname='v1.dat')
-dump_to_file(ds2, varlist, fname='v2.dat')
-dump_to_file(ds3, varlist, fname='v3.dat')
-dump_to_file(ds4, varlist, fname='v4.dat')
+dump_to_file(ds0, varlist, fname='s0.dat')
+dump_to_file(ds1, varlist, fname='s1.dat')
+dump_to_file(ds2, varlist, fname='s2.dat')
+dump_to_file(ds3, varlist, fname='s3.dat')
+dump_to_file(ds4, varlist, fname='s4.dat')
 
 
 if nogui:

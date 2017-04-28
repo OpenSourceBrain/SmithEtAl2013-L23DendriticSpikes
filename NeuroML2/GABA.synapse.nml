@@ -6,7 +6,7 @@
 
     <notes>NeuroML 2 file describing a single synaptic mechanism</notes>
 
-    <expTwoSynapse id="GABA" tauRise="0.1ms" tauDecay="4ms" gbase="0.5nS" erev="-75mV">
+    <expTwoSynapse id="GABA" tauRise="0.1ms" tauDecay="4ms" gbase="1nS" erev="-80mV">
         <notes>GABA synapse</notes>
     </expTwoSynapse>
 

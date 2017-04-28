@@ -12,7 +12,7 @@
   <Include file="testSyns.net.nml"/>
   
   
-  <Component type="Simulation" id="sim1" length="400ms" step="0.01 ms" target="net">
+  <Component type="Simulation" id="sim1" length="400ms" step="0.005 ms" target="net">
 
     <Display id="" title="v"  xmin="0" xmax="400" ymin="-75.0" ymax="-10" timeScale="1ms">
       <Line id="V0" timeScale="1ms" quantity="pop0/0/cell/v" scale="1 mV" color="#000000"/>

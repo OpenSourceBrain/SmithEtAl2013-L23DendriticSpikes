@@ -3,7 +3,7 @@
 
     <notes>NeuroML 2 file describing a single synaptic mechanism</notes>
 
-    <expTwoSynapse id="AMPA" tauRise="0.5ms" tauDecay="1ms" gbase="0.5nS" erev="0.0V">
+    <expTwoSynapse id="AMPA" tauRise="0.5ms" tauDecay="1ms" gbase="1nS" erev="0.0V">
         <notes>AMPA synapse</notes>
     </expTwoSynapse>
 

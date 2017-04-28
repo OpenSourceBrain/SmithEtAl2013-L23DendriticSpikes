@@ -6,11 +6,12 @@
 
     <notes>NeuroML 2 file describing a single synaptic mechanism</notes>
      
-    <blockingPlasticSynapse id="NMDA" gbase="0.485nS"
+    <!--                                     0.97nS to scale for (1-pf) with pf=0.03 in exp2synNMDA.mod -->
+    <blockingPlasticSynapse id="NMDA" gbase="0.97nS"  
                             erev="0mV" tauRise="2ms" tauDecay="20ms">
         <notes>NMDA synapse</notes>
         <blockMechanism type="voltageConcDepBlockMechanism" species="mg" blockConcentration="1 mM"
-                                      scalingConc="3.57 mM" scalingVolt="16.129 mV"/>
+                                      scalingConc="3.57 mM" scalingVolt="16.129032258 mV"/>
     </blockingPlasticSynapse>
 
 </neuroml>
