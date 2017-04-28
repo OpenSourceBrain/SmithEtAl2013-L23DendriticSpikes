@@ -2,7 +2,7 @@
     
     <!-- 
 
-        This LEMS file has been automatically generated using PyNeuroML v0.2.10 (libNeuroML v0.2.29)
+        This LEMS file has been automatically generated using PyNeuroML v0.2.10 (libNeuroML v0.2.30)
 
      -->
     
@@ -24,9 +24,9 @@
     <Include file="pas.channel.nml"/>
     <Include file="L23_Stim.net.nml"/>
    
-    <Simulation id="Sim_L23_Stim" length="200ms" step="0.025ms" target="L23_Stim" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_L23_Stim" length="600ms" step="0.025ms" target="L23_Stim" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
-        <Display id="Some_voltages" title="Plots of Some_voltages" timeScale="1ms" xmin="-20.0" xmax="220.0" ymin="-90" ymax="50">
+        <Display id="Some_voltages" title="Plots of Some_voltages" timeScale="1ms" xmin="-60.0" xmax="660.0" ymin="-90" ymax="50">
             <Line id="L23_pop_0_L23_NoHotSpot_0_v" quantity="L23_pop/0/L23_NoHotSpot/0/v" scale="1" color="#6aa799" timeScale="1ms"/>
             <Line id="L23_pop_0_L23_NoHotSpot_200_v" quantity="L23_pop/0/L23_NoHotSpot/200/v" scale="1" color="#029a72" timeScale="1ms"/>
             <Line id="L23_pop_0_L23_NoHotSpot_1000_v" quantity="L23_pop/0/L23_NoHotSpot/1000/v" scale="1" color="#d340bb" timeScale="1ms"/>
