@@ -3,7 +3,7 @@
 
     <notes>NeuroML file containing a single Channel description</notes>
 
-    <ionChannel id="na" conductance="0 pS" type="ionChannelHH" species="na">
+    <ionChannel id="na" conductance="10 pS" type="ionChannelHH" species="na">
 
         <notes>Sodium channel, Hodgkin-Huxley style kinetics.
 
