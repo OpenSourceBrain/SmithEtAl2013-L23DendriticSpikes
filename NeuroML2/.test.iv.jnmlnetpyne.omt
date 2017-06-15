@@ -1,0 +1,36 @@
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation 
+
+target: LEMS_L23_IV.xml
+engine: jNeuroML_NetPyNE
+mep: ../NEURON/test/.test.l23.mep
+experiments:
+  0.3:
+    observables:
+      spike times:
+        file: 
+          path: Sim_L23_IV.L23_pop.v.dat
+          columns: [0,5]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0.009143
+  0.4:
+    observables:
+      spike times:
+        file: 
+          path: Sim_L23_IV.L23_pop.v.dat
+          columns: [0,6]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0.004739
+  0.5:
+    observables:
+      spike times:
+        file: 
+          path: Sim_L23_IV.L23_pop.v.dat
+          columns: [0,7]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0.002596
