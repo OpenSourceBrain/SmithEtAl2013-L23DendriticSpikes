@@ -10,6 +10,7 @@ addons:
     - python-tk
     - python-numpy 
     - python-scipy 
+    - python-tornado
     - python-lxml
     - libhdf5-7
     - python-tables
