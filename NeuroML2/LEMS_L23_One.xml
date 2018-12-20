@@ -14,14 +14,6 @@
     <Include file="Networks.xml"/>
     <Include file="Simulation.xml"/>
     
-    <Include file="L23_NoHotSpot.cell.nml"/>
-    <Include file="ca.channel.nml"/>
-    <Include file="it.channel.nml"/>
-    <Include file="kca.channel.nml"/>
-    <Include file="km.channel.nml"/>
-    <Include file="kv.channel.nml"/>
-    <Include file="na.channel.nml"/>
-    <Include file="pas.channel.nml"/>
     <Include file="L23_One.net.nml"/>
    
     <Simulation id="Sim_L23_One" length="400ms" step="0.025ms" target="L23_One" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->

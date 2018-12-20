@@ -43,3 +43,4 @@ generatedNeuroML2
 /NeuroML2/notebooks/iv_L23_NoHotSpot.net.nml
 /NeuroML2/*.json
 /NeuroML2/*_netpyne.py
+/NeuroML2/temp

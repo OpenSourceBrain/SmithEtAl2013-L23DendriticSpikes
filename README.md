@@ -6,4 +6,11 @@ Model from: [Dendritic spikes enhance stimulus selectivity in cortical neurons i
 
 [![Build Status](https://travis-ci.org/OpenSourceBrain/SmithEtAl2013-L23DendriticSpikes.svg)](https://travis-ci.org/OpenSourceBrain/SmithEtAl2013-L23DendriticSpikes)
 
+[![DOI](https://www.zenodo.org/badge/30966621.svg)](https://www.zenodo.org/badge/latestdoi/30966621)
+
+### Reusing this model
+
+The code in this repository is provided under the terms of the [software license](LICENSE) included with it. If you use this model in your research, we respectfully ask you to cite the references outlined in the [CITATION](CITATION.md) file.
+
+
 
