@@ -22,7 +22,9 @@ virtualenv:
     system_site_packages: true
 
 env:
-    - OMV_ENGINE=PyNEURON
+    - OMV_ENGINE=PyNEURON:7.4
+    - OMV_ENGINE=PyNEURON:7.5
+    - OMV_ENGINE=PyNEURON:7.6
     - OMV_ENGINE=jNeuroML
     - OMV_ENGINE=jNeuroML_NEURON
     - OMV_ENGINE=jNeuroML_NetPyNE
