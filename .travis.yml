@@ -1,7 +1,6 @@
 # Framework for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
 
-dist: trusty
-sudo: false  
+dist: xenial
 
 addons:
   apt:
@@ -12,7 +11,6 @@ addons:
     - python-scipy 
     - python-tornado
     - python-lxml
-    - libhdf5-7
     - python-tables
 
 language: python
