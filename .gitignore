@@ -44,3 +44,7 @@ generatedNeuroML2
 /NeuroML2/*.json
 /NeuroML2/*_netpyne.py
 /NeuroML2/temp
+/NeuroML2/notebooks/*.spikes
+/NeuroML2/notebooks/report*.txt
+/NeuroML2/notebooks/LEMS_SimIClamp.xml
+/NeuroML2/notebooks/IClamp.net.nml

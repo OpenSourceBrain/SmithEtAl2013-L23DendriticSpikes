@@ -1,0 +1,63 @@
+{
+    "IClamp": {
+        "version": "NeuroMLlite v0.2.1",
+        "parameters": {
+            "input_amp": 0.3
+        },
+        "notes": "Current clamp input",
+        "cells": [
+            {
+                "L23_NoHotSpot": {
+                    "neuroml2_source_file": "../L23_NoHotSpot.cell.nml"
+                }
+            }
+        ],
+        "input_sources": [
+            {
+                "i_clamp": {
+                    "pynn_input": "DCSource",
+                    "parameters": {
+                        "amplitude": "input_amp",
+                        "start": 100,
+                        "stop": 800
+                    }
+                }
+            }
+        ],
+        "regions": [
+            {
+                "region1": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "width": 1000.0,
+                    "height": 100.0,
+                    "depth": 1000.0
+                }
+            }
+        ],
+        "populations": [
+            {
+                "pop0": {
+                    "size": 1,
+                    "component": "L23_NoHotSpot",
+                    "properties": {
+                        "color": "1 0 0"
+                    },
+                    "random_layout": {
+                        "region": "region1"
+                    }
+                }
+            }
+        ],
+        "inputs": [
+            {
+                "stim": {
+                    "input_source": "i_clamp",
+                    "population": "pop0",
+                    "percentage": 100.0
+                }
+            }
+        ]
+    }
+}
