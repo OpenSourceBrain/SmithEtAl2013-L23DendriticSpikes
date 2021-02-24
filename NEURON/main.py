@@ -9,7 +9,7 @@ import numpy as np
 import pickle
 import time
 
-################################################################################ 
+################################################################################
 #     Removing dependency on Brian 1 as the class used, OfflinePoissonGroup is not compatible
 #     with recent versions of Numpy. Using slightly modified OfflinePoissonGroup here.
 #     See https://github.com/OpenSourceBrain/SmithEtAl2013-L23DendriticSpikes/issues/3
@@ -35,8 +35,8 @@ class OfflinePoissonGroup(object): # This is weird, there is only an init method
         spikes = spikes[spikes <= T]
         neurons = randint(0, N, len(spikes))
         self.spiketimes = zip(neurons, spikes)
-      
-################################################################################   
+
+################################################################################
 
 import libcell as lb
 import saveClass as sc
@@ -77,7 +77,7 @@ def genPoissonInput(nsyn, rate, duration, onset):
     times = np.array([])
     while times.shape[0]<2:
         P =  OfflinePoissonGroup(nsyn, rate, duration)
-        times = np.array(P.spiketimes)    
+        times = np.array(P.spiketimes)
     times[:,1] = times[:,1] * 1000 + onset
     rates = 1./np.diff(np.array(P.spiketimes)[:,1]).mean()
     return times, rates
@@ -106,7 +106,7 @@ def sim_oneRandomInput(data, model, Ensyn, Insyn, Erate, Irate, bGround=False):
 
     for trial in np.arange(0, data.TRIALS):
         # Generate input
-        data.etimes, erates = genPoissonInput(Ensyn, Erate, data.st_duration, 
+        data.etimes, erates = genPoissonInput(Ensyn, Erate, data.st_duration,
                                               data.st_onset)
         data.itimes, irates = genPoissonInput(Insyn, Irate, data.st_duration,
                                               data.st_onset)
@@ -144,15 +144,15 @@ def sim_oneRandomInput(data, model, Ensyn, Insyn, Erate, Irate, bGround=False):
 
 def SIM_rateIteration(data, model, rRange, bGround):
     for rate in rRange:
-        print 'Running E rate', rate
-        
+        print('Running E rate %s'% rate)
+
         print("Running rateIteration simulation with parameters:")
         for k in sorted(data.__dict__.keys()):
             print("    %s:\t\t%s"%(k, data.__dict__[k]))
-            
+
         data.taxis, v, vD, r, g, i, ca, vsec = sim_oneRandomInput(data, model, data.Ensyn, data.Insyn, Erate=rate, Irate=rate, bGround=bGround)
-        storeSimOutput(data, v,vD,i,g,r,ca,vsec)        
-   
+        storeSimOutput(data, v,vD,i,g,r,ca,vsec)
+
 
 def SIM_currentSteps(data, model, iRange, bGround=False):
     soma_v, r, idata, gdata = [], [], [], []
@@ -226,7 +226,7 @@ def main(args=None):
     if data.SPINES: lb.addSpines(model)
     if data.ACTIVE: lb.init_active(model, axon=data.ACTIVEaxonSoma,
                                  soma=data.ACTIVEaxonSoma, dend=data.ACTIVEdend,
-                                 dendNa=data.ACTIVEdendNa, dendCa=data.ACTIVEdendCa) 
+                                 dendNa=data.ACTIVEdendNa, dendCa=data.ACTIVEdendCa)
     if data.ACTIVEhotSpot: lb.hotSpot(model)
 
     # Generate synapse locations
@@ -246,9 +246,9 @@ def main(args=None):
         data.Elocs = np.vstack((data.Elocs, data.bElocs))
         data.Ilocs = np.vstack((data.Ilocs, data.bIlocs))
 
-        # Hack for freezing the background 
+        # Hack for freezing the background
         # Uncomment first 2 lines and comment out last 2 for
-        # random background    
+        # random background
 
         #data.bElocs = loadElocs[data.Ensyn+1:]
         #data.bIlocs = loadIlocs[data.Insyn+1:]
@@ -258,9 +258,9 @@ def main(args=None):
     # Insert synapses
     if data.SYN:
         lb.add_AMPAsyns(model, locs=data.Elocs, gmax=data.Egmax)
-        if data.NMDA: lb.add_NMDAsyns(model, locs=data.Elocs, gmax=data.Egmax)  
+        if data.NMDA: lb.add_NMDAsyns(model, locs=data.Elocs, gmax=data.Egmax)
         if data.GABA: lb.add_GABAsyns(model, locs=data.Ilocs, gmax=data.Igmax,
-                                  rev=data.Irev) 
+                                  rev=data.Irev)
 
     # Insert IClamp
     data.iclampLoc = ['dend', 0.5, 28]
@@ -314,22 +314,6 @@ def main(args=None):
     f.close()
 
 
-    
+
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

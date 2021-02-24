@@ -60,7 +60,8 @@ def plot_timeseries(vdict, varlist):
 def create_dumps(section, varlist):
     recordings = {n: h.Vector() for n in varlist}
 
-    for (vn, v) in recordings.iteritems():
+    for vn in recordings:
+        v = recordings[vn]
         v.record(section(0.5).__getattribute__('_ref_' + vn))
 
     recordings['t'] = h.Vector()
@@ -110,7 +111,7 @@ run(600, 0.001)
 
 if not nogui:
     plot_timeseries(ds, varlist)
-    
+
 dump_to_file(ds, varlist, fname='nrn.v.dat')
 
 
