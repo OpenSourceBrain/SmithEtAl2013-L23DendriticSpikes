@@ -15,7 +15,7 @@ addons:
 
 language: python
 python: 
-  - 2.7
+  #- 2.7
   - 3.8
 
 env:
@@ -33,7 +33,7 @@ install:
     - omv install NEURON
     - which nrnivmodl -a || true
     - cd NEURON/test
-    - /home/travis/neuron/nrn/x86_64/bin/nrnivmodl ../mod.files
+    - nrnivmodl ../mod.files  # nrnivmodl installed with pip
     - ls -alt
     - cd ../..
 
