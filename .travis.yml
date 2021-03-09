@@ -1,6 +1,6 @@
 # Framework for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
 
-dist: xenial
+dist: bionic
 
 addons:
   apt:
@@ -14,10 +14,9 @@ addons:
     - python-tables
 
 language: python
-python: 2.7
-
-virtualenv:
-    system_site_packages: true
+python: 
+  - 2.7
+  - 3.8
 
 env:
     - OMV_ENGINE=PyNEURON
@@ -28,12 +27,12 @@ env:
     - OMV_ENGINE=jNeuroML_validate
 
 install:     
-    - pip install kiwisolver==1.1.0 #  Temporary, due to issues with 1.2.0
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
     
     # Need to pre install NEURON so nrnivmodl can be run targeting mod files in a different directory
     - omv install NEURON
     - cd NEURON/test
+    - which nrnivmodl
     - /home/travis/neuron/nrn/x86_64/bin/nrnivmodl ../mod.files
     - ls -alt
     - cd ../..
