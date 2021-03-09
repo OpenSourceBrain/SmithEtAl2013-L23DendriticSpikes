@@ -31,6 +31,7 @@ install:
     
     # Need to pre install NEURON so nrnivmodl can be run targeting mod files in a different directory
     - omv install NEURON
+    - which nrnivmodl -a || true
     - cd NEURON/test
     - /home/travis/neuron/nrn/x86_64/bin/nrnivmodl ../mod.files
     - ls -alt
@@ -38,7 +39,6 @@ install:
 
 script:
     - omv all -V
-    - which nrnivmodl -a || true
     
     
     
