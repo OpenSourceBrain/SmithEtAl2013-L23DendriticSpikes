@@ -30,6 +30,14 @@ jobs:
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
         pip install scipy sympy matplotlib cython pandas tables
         
+
+    - name: Compile some mod files
+      if: ${{ matrix.engine == 'PyNEURON' }}
+      run: |
+        omv install NEURON
+        cd NEURON/test
+        nrnivmodl ../mod.files
+        
     - name: Run OMV tests on engine ${{ matrix.engine }}
       run: |
         omv all -V --engine=${{ matrix.engine }}
