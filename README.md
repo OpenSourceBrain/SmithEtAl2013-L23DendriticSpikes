@@ -4,7 +4,7 @@ Model from: [Dendritic spikes enhance stimulus selectivity in cortical neurons i
 
 ![L23](https://raw.githubusercontent.com/OpenSourceBrain/SmithEtAl2013-L23DendriticSpikes/master/images/L23.png)
 
-[![Build Status](https://travis-ci.com/OpenSourceBrain/SmithEtAl2013-L23DendriticSpikes.svg)](https://travis-ci.com/OpenSourceBrain/SmithEtAl2013-L23DendriticSpikes).  
+[![Continuous build using OMV](https://github.com/OpenSourceBrain/SmithEtAl2013-L23DendriticSpikes/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/SmithEtAl2013-L23DendriticSpikes/actions/workflows/omv-ci.yml)
 
 [![DOI](https://www.zenodo.org/badge/30966621.svg)](https://www.zenodo.org/badge/latestdoi/30966621)
 
