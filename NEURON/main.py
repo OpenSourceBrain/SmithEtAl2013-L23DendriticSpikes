@@ -34,7 +34,7 @@ class OfflinePoissonGroup(object): # This is weird, there is only an init method
         spikes = cumsum(isi)
         spikes = spikes[spikes <= T]
         neurons = randint(0, N, len(spikes))
-        self.spiketimes = zip(neurons, spikes)
+        self.spiketimes = list(zip(neurons, spikes))
 
 ################################################################################
 
@@ -75,7 +75,7 @@ def genRandomLocs(data, model, nsyn):
 # Input generation functions
 def genPoissonInput(nsyn, rate, duration, onset):
     times = np.array([])
-    while times.shape[0]<2:
+    while len(times.shape)<1 or times.shape[0]<2:
         P =  OfflinePoissonGroup(nsyn, rate, duration)
         times = np.array(P.spiketimes)
     times[:,1] = times[:,1] * 1000 + onset
@@ -101,8 +101,8 @@ def addBground(data, nsyn, Snsyn, rate, sTimes):
 def sim_oneRandomInput(data, model, Ensyn, Insyn, Erate, Irate, bGround=False):
     soma_v, gdata, idata, Erates, Irates, dend_v, dend_ca, vSec = [], [], [], [], [], [], [], []
     data.all_Etimes, data.all_Itimes = [], []
-    ETIMES = np.load('./etimes.npy')
-    ITIMES = np.load('./itimes.npy')
+    ETIMES = np.load('./etimes.npy', allow_pickle=True, encoding='latin1')
+    ITIMES = np.load('./itimes.npy', allow_pickle=True, encoding='latin1')
 
     for trial in np.arange(0, data.TRIALS):
         # Generate input
