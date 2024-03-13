@@ -1,4 +1,3 @@
-
 pynml-channelanalysis it.channel.nml ca.channel.nml \
                       na.channel.nml kca.channel.nml \
                       km.channel.nml kv.channel.nml \
@@ -9,3 +8,4 @@ pynml-channelanalysis it.channel.nml ca.channel.nml \
                       km.channel.nml kv.channel.nml \
                       -caConc 4.3e-4 -temperature 34 -html -md -datSuffix '.34'
 
+pynml-plotchan -nogui "./L23_NoHotSpot.cell.nml"
